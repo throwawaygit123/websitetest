@@ -139,8 +139,10 @@ export const m = {
     hospitaladdress:'医院地址',
     petha:'请输入医院地址',
     // homepage:'首页'
-    meta:{role:'角色管理'}
-
+    // meta:{role:'角色管理'}
+    viewdetails:'查看详情',
+    down:'下载',
+    historytest:'历史测试'
 
 
 

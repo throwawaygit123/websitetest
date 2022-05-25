@@ -113,15 +113,7 @@
                 </span>
               </el-menu-item>
             </router-link>
-            <router-link to="historytest">
-              <el-menu-item index="1-9">
-              <span style="font-size: 14px">
-                {{
-                $t("m.dpht")
-                }}
-              </span>
-            </el-menu-item>
-            </router-link>
+          
             
             <!-- <el-menu-item index="1-10"
               ><span style="font-size: 14px">{{

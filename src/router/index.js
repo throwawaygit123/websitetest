@@ -123,6 +123,13 @@ const routes = [
         component: () => import('@/layout/testresults/IndexView.vue')
 
       }
+      ,{
+        path:'result2',
+        name:'result2',
+        meta:{title:'Results'},
+        component: () => import('@/layout/testresults/Results2View.vue')
+
+      }
       // ,{
       //   path:'testone',
       //   name:'testone',
@@ -195,7 +202,7 @@ const routes = [
         path:'historytest',
         name:'historytest',
         meta:{title:'History Test'},
-        component: () => import('@/layout/historytest/IndexView.vue')
+        component: () => import('@/layout/historytest/HistoryTest.vue')
 
       }
     ]

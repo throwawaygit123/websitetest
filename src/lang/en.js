@@ -136,7 +136,10 @@ export const m = {
     dateofbirth1:'Please enter your date of birth',
     hospitaladdress:'Hospital address',
     petha:'Please enter the hospital address',
-    meta:{role:'Role'}
+    // meta:{role:'Role'},
+    viewdetails:'View details',
+    down:'Down Load',
+    historytest:'History Test'
 
 
 
