@@ -51,5 +51,6 @@ export default {
   color: #333;
   /* text-align: center; */
   line-height: 50px;
+  overflow: hidden;
 }
 </style>

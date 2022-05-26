@@ -1,6 +1,9 @@
 <template>
   <div class="result">
-    <el-row style="float:right;margin-bottom:15px">
+    <el-row style="float:left;width:500px">
+      <p style="float:left;display:inline-block;width:200px;line-height:normal;">Cora</p>
+    </el-row>
+    <el-row style="float:right;margin-bottom:15px;width:250">
       <router-link to="/historytest" style="text-decoration: none; color: white">
         <el-button type="primary" plain style="float:left; text-align: center;display:block;">{{ $t("m.historytest") }}</el-button>
       </router-link>
@@ -14,10 +17,10 @@
     />-->
 
     <el-table :data="tableData" border style="width: 100%;">
-      <el-table-column prop="date" :label="$t('m.date')" width="170"></el-table-column>
+      <el-table-column prop="date" :label="$t('m.date')" width="350"></el-table-column>
       <!-- <el-table-column prop="name" label="Role(角色)" width="200"> </el-table-column> -->
-      <el-table-column prop="name" :label="$t('m.patientidname')" width="300"></el-table-column>
-      <el-table-column prop="name" :label="$t('m.results')" width="200">
+      <!-- <el-table-column prop="name" :label="$t('m.patientidname')" width="300"></el-table-column> -->
+      <el-table-column prop="name" :label="$t('m.results')" width="350">
         <router-link to="resultw">
           <template>
             <el-tag type="success">{{ $t("m.viewdetails") }}</el-tag>
@@ -25,13 +28,13 @@
         </router-link>
       </el-table-column>
 
-      <el-table-column prop="address" :label="$t('m.operation')">
+      <el-table-column prop="address" :label="$t('m.operation')" >
         <template slot-scope="scope">
-          <el-button
+          <!-- <el-button
             size="mini"
             type="success"
             @click="handleEdit(scope.$index, scope.row)"
-          >{{ $t("m.examine") }}</el-button>
+          >{{ $t("m.examine") }}</el-button> -->
           <el-button
             size="mini"
             type="danger"
