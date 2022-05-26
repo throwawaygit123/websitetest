@@ -139,6 +139,7 @@ export const m = {
     // meta:{role:'Role'},
     viewdetails:'View details',
     down:'Down Load',
+    downall:'Down Load All',
     historytest:'History Test'
 
 

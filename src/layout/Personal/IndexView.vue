@@ -14,13 +14,8 @@
     <el-table :data="tableData" border style="width: 100%">
       <el-table-column prop="date" :label="$t('m.patientid')" width="100"></el-table-column>
       <el-table-column prop="admin" :label="$t('m.patientidname')" width="150"></el-table-column>
-      <el-table-column prop="name" :label="$t('m.type')" width="120">
-        <template>
-          <el-tag type="success">{{ $t("m.intreatment") }}</el-tag>
-        </template>
-      </el-table-column>
 
-      <el-table-column prop="name" :label="$t('m.historymedical')" width="180">
+      <el-table-column prop="name" :label="$t('m.historymedical')" width="230">
         <router-link to="/historymedical">
           <template>
             <el-tag type="warning">{{ $t("m.historymedical") }}</el-tag>
@@ -28,29 +23,34 @@
         </router-link>
       </el-table-column>
 
-      <el-table-column prop="name" :label="$t('m.uaf')" width="180">
+      <el-table-column prop="name" :label="$t('m.uaf')" width="230">
         <!-- <router-link to="/historymedical"> -->
-          <template>
-            <!-- <el-tag type="warning">点击上传</el-tag> -->
-            <el-upload
-              class="upload-demo"
-              
-              :on-preview="handlePreview"
-              :on-remove="handleRemove"
-              :before-remove="beforeRemove"
-              multiple
-              :limit="3"
-              :on-exceed="handleExceed"
-              :file-list="fileList"
-              :show-file-list="true"
-            >
-              <el-button size="small" type="primary">{{ $t("m.clickupload") }}</el-button>
-              
-            </el-upload>
-          </template>
+        <template>
+          <!-- <el-tag type="warning">点击上传</el-tag> -->
+          <el-upload
+            class="upload-demo"
+            :on-preview="handlePreview"
+            :on-remove="handleRemove"
+            :before-remove="beforeRemove"
+            multiple
+            :limit="3"
+            :on-exceed="handleExceed"
+            :file-list="fileList"
+            :show-file-list="true"
+          >
+            <el-tag  type="primary">{{ $t("m.clickupload") }}</el-tag>
+          </el-upload>
+        </template>
         <!-- </router-link> -->
       </el-table-column>
 
+      <el-table-column prop="name" :label="$t('m.testresult')" width="150">
+        <router-link to="result2">
+          <template>
+            <el-tag type="success">{{ $t("m.clicktoview") }}</el-tag>
+          </template>
+        </router-link>
+      </el-table-column>
       <el-table-column prop="address" :label="$t('m.operation')">
         <template slot-scope="scope">
           <el-button size="mini" @click="handleEdit(scope.$index, scope.row)">

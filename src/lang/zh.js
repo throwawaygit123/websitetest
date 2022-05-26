@@ -142,7 +142,8 @@ export const m = {
     // meta:{role:'角色管理'}
     viewdetails:'查看详情',
     down:'下载',
-    historytest:'历史测试'
+    downall:'下载全部',
+    historytest:'历史测试',
 
 
 

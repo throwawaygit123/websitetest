@@ -10,8 +10,8 @@
     </div>-->
 
     <div class="box">
-      <ul style="width:100%;padding-left:30%; height:30px;text-align:center;">
-        <li>
+      <ul style="width:100%;padding-left:43%; height:30px;text-align:center;">
+        <!-- <li>
           <div style="float:left ;margin-top:8px; width:30px;height:20px;background:#67c23a;"></div>
           <p style="float:right;line-height:normal;font-size:13px;margin-left:3px">Great</p>
         </li>
@@ -26,7 +26,7 @@
         <li>
           <div style="float:left ;margin-top:8px; width:30px;height:20px;background:#f56c6c;"></div>
           <p style="float:right;line-height:normal;font-size:13px;margin-left:3px">Very bad</p>
-        </li>
+        </li> -->
         <li>
           <div style="float:left ;margin-top:20px; width:30px;height:2px;background:#ce2127;"></div>
           <p style="float:right;line-height:normal;font-size:13px;margin-left:3px">Max</p>
@@ -184,67 +184,8 @@ export default {
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [
-        {
-          value: 58,
-          itemStyle: {
-            color: "#e6a23c"
-          }
-        },
-        {
-          value: 70,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 68,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 90,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 70,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 60,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 90,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 70,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 70,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 120,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        }
+      let data = [58,70,68,90,70,60,90,70,70,120,
+        
       ];
       let yMax = 100;
       let dataShadow = [];
@@ -321,7 +262,13 @@ export default {
           {
             type: "bar",
             showBackground: true,
-
+            itemStyle: {
+              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                { offset: 0, color: "#83bff6" },
+                { offset: 0.5, color: "#188df0" },
+                { offset: 1, color: "#188df0" }
+              ])
+            },
             data: data,
 
             markLine: {
@@ -338,7 +285,7 @@ export default {
                     // :"100",
                     // borderWidth:'100',
                     // fontSize:3,
-                     width:3,
+                    width: 3,
                     color: "#58595b"
                   }
                 },
@@ -349,7 +296,7 @@ export default {
                   yAxis: "100",
                   lineStyle: {
                     type: "solid",
-                     width:3,
+                    width: 3,
 
                     color: "#ce2127"
                   }
@@ -366,67 +313,7 @@ export default {
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [
-        {
-          value: 80,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 95,
-          itemStyle: {
-            color: "#e6a23c"
-          }
-        },
-        {
-          value: 100,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 90,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 108,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 130,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 120,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 116,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 105,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 60,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        }
+      let data = [80,95,100,90,108,130,120,116,105,60,
       ];
       let yMax = 100;
       let dataShadow = [];
@@ -503,7 +390,13 @@ export default {
           {
             type: "bar",
             showBackground: true,
-
+            itemStyle: {
+              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                { offset: 0, color: "#83bff6" },
+                { offset: 0.5, color: "#188df0" },
+                { offset: 1, color: "#188df0" }
+              ])
+            },
             data: data,
 
             markLine: {
@@ -516,7 +409,7 @@ export default {
                   yAxis: "100",
                   lineStyle: {
                     type: " solid",
-                     width:3,
+                    width: 3,
 
                     color: "#58595b"
                   }
@@ -528,7 +421,7 @@ export default {
                   yAxis: "120",
                   lineStyle: {
                     type: "soloid",
-                     width:3,
+                    width: 3,
 
                     color: "#ce2127"
                   }
@@ -546,67 +439,8 @@ export default {
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [
-        {
-          value: 58,
-          itemStyle: {
-            color: "#e6a23c"
-          }
-        },
-        {
-          value: 70,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 68,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 90,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 70,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 64,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 90,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 70,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 70,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 120,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        }
+      let data = [58,70,68,90,70,64,90,70,70,120
+       
       ];
       let yMax = 100;
       let dataShadow = [];
@@ -683,7 +517,13 @@ export default {
           {
             type: "bar",
             showBackground: true,
-
+            itemStyle: {
+              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                { offset: 0, color: "#83bff6" },
+                { offset: 0.5, color: "#188df0" },
+                { offset: 1, color: "#188df0" }
+              ])
+            },
             data: data,
 
             markLine: {
@@ -700,7 +540,7 @@ export default {
                   yAxis: "60",
                   lineStyle: {
                     type: "solid",
-                     width:3,
+                    width: 3,
 
                     color: "#58595b"
                   }
@@ -712,7 +552,7 @@ export default {
                   yAxis: "70",
                   lineStyle: {
                     type: "solid",
-                     width:3,
+                    width: 3,
 
                     color: "#ce2127"
                   }
@@ -721,79 +561,17 @@ export default {
             }
           }
         ]
-
       };
- 
 
       option && myChart.setOption(option);
-
     },
     four() {
       var chartDom = document.getElementById("main4");
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [
-        {
-          value: 0.158,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 0.19,
-          itemStyle: {
-            color: "#e6a23c"
-          }
-        },
-        {
-          value: 0.25,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 0.3,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 0.4,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 0.18,
-          itemStyle: {
-            color: "#e6a23c"
-          }
-        },
-        {
-          value: 0.56,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 0.2,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 0.34,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 0.3,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        }
+      let data = [0.158,0.19,0.25,0.3,0.4,0.18,0.56,0.2,0.34,0.3
+        
       ];
       let yMax = 100;
       let dataShadow = [];
@@ -870,7 +648,13 @@ export default {
           {
             type: "bar",
             showBackground: true,
-
+            itemStyle: {
+              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                { offset: 0, color: "#83bff6" },
+                { offset: 0.5, color: "#188df0" },
+                { offset: 1, color: "#188df0" }
+              ])
+            },
             data: data,
             markLine: {
               symbol: "none",
@@ -882,7 +666,7 @@ export default {
                   yAxis: "0.2",
                   lineStyle: {
                     type: "solid",
-                     width:3,
+                    width: 3,
 
                     color: "#58595b"
                   }
@@ -894,7 +678,7 @@ export default {
                   yAxis: "0.4",
                   lineStyle: {
                     type: "solid",
-                     width:3,
+                    width: 3,
 
                     color: "#ce2127"
                   }
@@ -903,9 +687,7 @@ export default {
             }
           }
         ]
- 
       };
-
 
       option && myChart.setOption(option);
     },
@@ -914,67 +696,8 @@ export default {
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [
-        {
-          value: 7.5,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 5,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 6.8,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 4.8,
-          itemStyle: {
-            color: "#e6a23c"
-          }
-        },
-        {
-          value: 8.4,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 3,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 6,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 12,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 10,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 8,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        }
+      let data = [7.5,5,6.8,4.8,8.4,3,6,12,10,8
+        
       ];
       let yMax = 100;
       let dataShadow = [];
@@ -1051,7 +774,13 @@ export default {
           {
             type: "bar",
             showBackground: true,
-
+            itemStyle: {
+              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                { offset: 0, color: "#83bff6" },
+                { offset: 0.5, color: "#188df0" },
+                { offset: 1, color: "#188df0" }
+              ])
+            },
             data: data,
 
             markLine: {
@@ -1065,7 +794,7 @@ export default {
                   yAxis: "5",
                   lineStyle: {
                     type: "solid",
-                     width:3,
+                    width: 3,
 
                     color: "#58595b"
                   }
@@ -1077,7 +806,7 @@ export default {
                   yAxis: "10",
                   lineStyle: {
                     type: "solid",
-                     width:3,
+                    width: 3,
 
                     color: "#ce2127"
                   }
@@ -1089,74 +818,14 @@ export default {
       };
 
       option && myChart.setOption(option);
-
     },
     six() {
       var chartDom = document.getElementById("main6");
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [
-        {
-          value: 7.5,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 5,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 6.8,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 4.8,
-          itemStyle: {
-            color: "#e6a23c"
-          }
-        },
-        {
-          value: 8.4,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 3,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 6,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 12,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 10,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 8,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        }
+      let data = [7.5,5,6.8,4.8,8.4,3,6,12,10,8
+       
       ];
       let yMax = 100;
       let dataShadow = [];
@@ -1233,7 +902,13 @@ export default {
           {
             type: "bar",
             showBackground: true,
-   
+            itemStyle: {
+              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                { offset: 0, color: "#83bff6" },
+                { offset: 0.5, color: "#188df0" },
+                { offset: 1, color: "#188df0" }
+              ])
+            },
             data: data,
 
             markLine: {
@@ -1247,7 +922,7 @@ export default {
                   yAxis: "5",
                   lineStyle: {
                     type: "solid",
-                     width:3,
+                    width: 3,
 
                     color: "#58595b"
                   }
@@ -1259,7 +934,7 @@ export default {
                   yAxis: "10",
                   lineStyle: {
                     type: "solid",
-                     width:3,
+                    width: 3,
 
                     color: "#ce2127"
                   }
@@ -1268,9 +943,7 @@ export default {
             }
           }
         ]
- 
       };
-
 
       option && myChart.setOption(option);
     },
@@ -1279,67 +952,8 @@ export default {
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [
-        {
-          value: 0.45,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 0.5038,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 0.68,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 0.48,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 0.844,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 0.3,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 0.6,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 0.2,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 0.4,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 0.5038,
-          itemStyle: {
-            color: "yellow"
-          }
-        }
+      let data = [0.45,0.5038,0.68,0.48,0.844,0.3,0.6,0.2,0.4,0.5038
+     
       ];
       let yMax = 100;
       let dataShadow = [];
@@ -1416,7 +1030,13 @@ export default {
           {
             type: "bar",
             showBackground: true,
-
+            itemStyle: {
+              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                { offset: 0, color: "#83bff6" },
+                { offset: 0.5, color: "#188df0" },
+                { offset: 1, color: "#188df0" }
+              ])
+            },
             data: data,
 
             markLine: {
@@ -1430,7 +1050,7 @@ export default {
                   yAxis: "0.4",
                   lineStyle: {
                     type: "solid",
-                     width:3,
+                    width: 3,
 
                     color: "#6d6e71"
                   }
@@ -1442,7 +1062,7 @@ export default {
                   yAxis: "0.5038",
                   lineStyle: {
                     type: "solid",
-                     width:3,
+                    width: 3,
 
                     color: "#ce2127"
                   }
@@ -1454,74 +1074,14 @@ export default {
       };
 
       option && myChart.setOption(option);
-   
     },
     eight() {
       var chartDom = document.getElementById("main8");
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [
-        {
-          value: 0.45,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 0.5038,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 0.68,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 0.48,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 0.844,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 0.3,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 0.6,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 0.2,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 0.4,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 0.5038,
-          itemStyle: {
-            color: "yellow"
-          }
-        }
+      let data = [0.45,0.5038,0.68,0.48,0.844,0.3,0.6,0.2,0.4,0.5038
+     
       ];
       let yMax = 100;
       let dataShadow = [];
@@ -1598,9 +1158,15 @@ export default {
           {
             type: "bar",
             showBackground: true,
-       
+            itemStyle: {
+              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                { offset: 0, color: "#83bff6" },
+                { offset: 0.5, color: "#188df0" },
+                { offset: 1, color: "#188df0" }
+              ])
+            },
             data: data,
-     
+
             markLine: {
               symbol: "none",
 
@@ -1612,7 +1178,7 @@ export default {
                   yAxis: "0.4",
                   lineStyle: {
                     type: "solid",
-                     width:3,
+                    width: 3,
 
                     color: "#6d6e71"
                   }
@@ -1624,7 +1190,7 @@ export default {
                   yAxis: "0.5038",
                   lineStyle: {
                     type: "solid",
-                     width:3,
+                    width: 3,
 
                     color: "#ce2127"
                   }
@@ -1633,9 +1199,7 @@ export default {
             }
           }
         ]
-  
       };
-    
 
       option && myChart.setOption(option);
     },
@@ -1644,67 +1208,8 @@ export default {
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [
-        {
-          value: 4.6,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 7.8,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 5.9,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 4.5,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 7.4,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 8,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 5.6,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 2.9,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 3.8,
-          itemStyle: {
-            color: "#e6a23c"
-          }
-        },
-        {
-          value: 5.7,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        }
+      let data = [4.6,7.8,5.9,4.5,7.4,8,5.6,2.9,3.8,5.7
+        
       ];
       let yMax = 100;
       let dataShadow = [];
@@ -1781,7 +1286,13 @@ export default {
           {
             type: "bar",
             showBackground: true,
-
+            itemStyle: {
+              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                { offset: 0, color: "#83bff6" },
+                { offset: 0.5, color: "#188df0" },
+                { offset: 1, color: "#188df0" }
+              ])
+            },
             data: data,
 
             markLine: {
@@ -1795,7 +1306,7 @@ export default {
                   yAxis: "4",
                   lineStyle: {
                     type: "solid",
-                     width:3,
+                    width: 3,
 
                     color: "#58595b"
                   }
@@ -1807,7 +1318,7 @@ export default {
                   yAxis: "6",
                   lineStyle: {
                     type: "solid",
-                     width:3,
+                    width: 3,
 
                     color: "#ce2127"
                   }
@@ -1816,79 +1327,18 @@ export default {
             }
           }
         ]
-
       };
 
-
       option && myChart.setOption(option);
-
     },
     ten() {
       var chartDom = document.getElementById("main10");
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [
-        {
-          value: 70,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 75,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 68,
-          itemStyle: {
-            color: "#e6a23c"
-          }
-        },
-        {
-          value: 80,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 105,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 120,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        },
-        {
-          value: 110,
-          itemStyle: {
-            color: "#e6a23c"
-          }
-        },
-        {
-          value: 70,
-          itemStyle: {
-            color: "yellow"
-          }
-        },
-        {
-          value: 80,
-          itemStyle: {
-            color: "#67c23a"
-          }
-        },
-        {
-          value: 60,
-          itemStyle: {
-            color: "#f56c6c"
-          }
-        }
+      let data = [70,75,68,80,105,120,110,70,80,60
+     
+        
       ];
       let yMax = 100;
       let dataShadow = [];
@@ -2003,12 +1453,21 @@ export default {
                 {
                   name: "MIN",
                   value: "60",
-                  xAxis: "4",
-                  yAxis: "70",
+                  // xAxis: "4",
+                  yAxis: 70,
+                  // laber:{
+                  //   show:true,
+                  //   postition:'end',
+                  //   fornmatter:function(){
+                  //     let tip = '';
+                  //     tip +='<div>tip</div>'
+                  //     return tip
+                  //   },
+                  //   color:'pink'
+                  // },
                   lineStyle: {
                     type: "solid",
-                     width:3,
-
+                    width: 3,
                     color: "#58595b"
                   }
                 },
@@ -2019,7 +1478,7 @@ export default {
                   yAxis: "105",
                   lineStyle: {
                     type: "solid",
-                     width:3,
+                    width: 3,
 
                     color: "#ce2127"
                   }

@@ -1,5 +1,8 @@
 <template>
   <div class="hospital">
+    <el-row style="float:left;width:500px">
+      <p style="float:left;display:inline-block;width:200px;line-height:normal; font-weight:700;">2021-10-5 11:00(am)</p>
+    </el-row>
     <el-row style="float:right;margin-bottom:15px;width:250">
       
       <el-button type="primary" plain style="float:left; text-align: center;display:block;margin-left:5px">{{ $t("m.down") }}</el-button>

@@ -83,44 +83,19 @@
               </span>
             </el-menu-item>
           </router-link>
-
-          <el-submenu index="5">
-            <template slot="title">
-              <i class="el-icon-s-custom"></i>
-
-              <span style="font-size: 17px">
+          
+           <router-link to="/personalinformation">
+            <el-menu-item index="5">
+              <i class="el-icon-s-custom" style="color: white"></i>
+              <span slot="title" style="font-size: 17px">
                 {{
                 $t("m.patientmanagement")
                 }}
               </span>
-            </template>
-            <router-link to="/personalinformation">
-              <el-menu-item index="1-7">
-                <span style="font-size: 14px">
-                  {{
-                  $t("m.patientinformation")
-                  }}
-                </span>
-              </el-menu-item>
-            </router-link>
+            </el-menu-item>
+          </router-link>
 
-            <router-link to="results">
-              <el-menu-item index="1-8">
-                <span style="font-size: 14px">
-                  {{
-                  $t("m.testresult")
-                  }}
-                </span>
-              </el-menu-item>
-            </router-link>
           
-            
-            <!-- <el-menu-item index="1-10"
-              ><span style="font-size: 14px">{{
-                $t("m.uef")
-              }}</span></el-menu-item
-            >-->
-          </el-submenu>
         </el-menu>
       </el-col>
     </el-row>
@@ -135,19 +110,9 @@ export default {
       // openeds:['1']
     };
   },
-  // created(){
-  //   this.$bus.$on('brotherEvent',res=>{
-  //     console.log(res)
-  //     this.isCollapse=res
-  //   })
-  // },
-  // mounted:{
-
-  // },
+ 
   methods: {
-    // a(){
-    //   this.$bus.$emit('brotherEvent',122)
-    // },
+ 
     handleOpen(key, keyPath) {
       console.log(key, keyPath);
     },
