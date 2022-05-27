@@ -144,6 +144,12 @@ export const m = {
     down:'下载',
     downall:'下载全部',
     historytest:'历史测试',
+    myaccount:'我的账号',
+    aboutus:'关于我们',
+    recentpatient:'最近病人',
+    accountid:'全局ID',
+    hospitalid:'医院ID',
+    doctorid:'医生ID'
 
 
 

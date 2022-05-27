@@ -12,7 +12,7 @@ const routes = [
     children: [
       {
         path: '/',
-        redirect: '/index'
+        redirect: '/login'
       },
       {
         path: '/index',
@@ -230,7 +230,7 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to,from,next)=>{
-  document.title="Quan Bio";
+  document.title="QuanBio";
   next()
 })
 export default router

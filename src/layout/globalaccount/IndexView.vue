@@ -13,7 +13,7 @@
           style="width:20%;float:right"
           :placeholder="$t('m.ekts')"/>
     <el-table :data="tableData" border style="width: 100%">
-      <el-table-column prop="date" :label="$t('m.patientid')" width="100">
+      <el-table-column prop="date" :label="$t('m.accountid')" width="100">
       </el-table-column>
       <!-- <el-table-column prop="name" label="Role(角色)" width="200"> </el-table-column> -->
       <el-table-column prop="admin" :label='$t("m.username")'  width="200">

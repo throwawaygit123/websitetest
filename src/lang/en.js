@@ -39,9 +39,9 @@ export const m = {
     jobnumber:'Jobnumber',//工作编号
     doctorname:'Doctorname',//医生名称
     password:'Password',//密码
-    confirmpasdsword:'Confirmpasdsword',//确认密码
-    patientid:'Id',//病人ID
-    patientidname:'Patientid Name',//病人姓名
+    confirmpasdsword:'Confirm password',//确认密码
+    patientid:'Patient Id',//病人ID
+    patientidname:'Patient Name',//病人姓名
     intreatment:'In treatment',//就诊中
     personalinformation:'Personal Information',//病人信息
     familyname:'Family Name',//姓
@@ -140,8 +140,13 @@ export const m = {
     viewdetails:'View details',
     down:'Down Load',
     downall:'Down Load All',
-    historytest:'History Test'
-
+    historytest:'History Test',
+    myaccount:'My Account',
+    aboutus:'About us',
+    recentpatient:'Recent patient',
+    accountid:'Account ID',
+    hospitalid:'Hospital ID',
+    doctorid:'Doctor ID'
 
 
 }

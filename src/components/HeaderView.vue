@@ -1,17 +1,21 @@
 <template>
   <div style="width:100%;height:100%;">
-    <img src="../assets/logo.png" alt style="max-width:220px;float:left" />
+    <div style="width:230px;height:50px;float:left;">
+       <img src="../assets/logo_03.png" alt style="max-width:54px;float:left;margin-left:0px;margin-top:2px" />
+       <p style="float:left;color:white; margin:5px 0 0 3px;font-size:30px">QuanBio</p>
+    </div>
+   
     <el-button
       icon="el-icon-back"
       size="mini"
       @click="$router.go(-1)"
       v-if="$route.path!='/index'"
       class="btn-back"
-      style="float:left;margin-top:40px;margin-left:20px;"
+      style="float:left;margin-top:10px;margin-left:15px;"
     ></el-button>
     <div>
       <el-breadcrumb separator="/" class="mbx">
-        <el-breadcrumb-item :to="{ path: '/' }">Home Page</el-breadcrumb-item>
+        <el-breadcrumb-item :to="{ path: '/index' }">Home Page</el-breadcrumb-item>
         <el-breadcrumb-item>
           <a>{{$route.meta.title}}</a>
         </el-breadcrumb-item>
@@ -30,9 +34,7 @@
           <span style="color:white;font-size:15px;">db</span>
           <i class="el-icon-arrow-down el-icon--right"></i>
         </span>
-
         <el-dropdown-menu slot="dropdown" style=" width:200px">
-          <!-- <el-dropdown-item icon="el-icon-user" command="info">个人中心</el-dropdown-item> -->
            <router-link to="/login" style="text-decoration: none">
               <el-dropdown-item icon="el-icon-user"
                 >{{$t('m.switchaccount')}}</el-dropdown-item
@@ -43,7 +45,6 @@
                 >{{$t('m.exitlogin')}}</el-dropdown-item
               >
             </router-link>
-          <!-- <el-dropdown-item icon="el-icon-switch-button" command="exit">退出</el-dropdown-item> -->
         </el-dropdown-menu>
       </el-dropdown>
     </div>
@@ -77,7 +78,7 @@ export default {
 .mbx {
   float: left;
   margin-left: 20px;
-  line-height: 110px !important;
+  line-height: 50px !important;
   color: white !important;
 }
 .el-breadcrumb__inner a,
@@ -91,20 +92,17 @@ export default {
   background:none  !important;
   margin-top: 5px;
   display: block;
-  margin-top: 33px;
+  margin-top: 12px;
 }
 .h2-2 img {
-  max-width: 20px;
+  max-width: 16px;
 
-  /* margin-top: 150px;
-  margin-left: -80px; */
 }
 .el-dropdown-menu{
 
   position: static;
-  /* display: block; */
+
   margin-top: -30px;
-  /* top: 73px !important;
-  right:1200px !important; */
+
 }
 </style>

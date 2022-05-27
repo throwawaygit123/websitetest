@@ -12,15 +12,15 @@
       :placeholder="$t('m.ekts')"
     />
     <el-table :data="tableData" border style="width: 100%">
-      <el-table-column prop="num" :label="$t('m.userid')" width="100"></el-table-column>
-      <el-table-column prop="username" :label="$t('m.username')" width="200"></el-table-column>
-      <el-table-column prop="rolename" :label="$t('m.rolename')" width="200"></el-table-column>
+      <el-table-column prop="num" :label="$t('m.userid')" width="150"></el-table-column>
+      <el-table-column prop="username" :label="$t('m.username')" width="250"></el-table-column>
+      <el-table-column prop="rolename" :label="$t('m.rolename')" width="250"></el-table-column>
 
-      <el-table-column prop="type" :label="$t('m.state')" width="250">
+      <!-- <el-table-column prop="type" :label="$t('m.state')" width="250">
         <template>
           <el-tag type="success">{{ $t("m.enable") }}</el-tag>
         </template>
-      </el-table-column>
+      </el-table-column> -->
       <!-- <el-table-column prop="address" width="300" label="地址">
       </el-table-column>-->
 

@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <el-container style="width:100%;height:100%">
-      <el-header style="height:100px;border-bottom:2px solid #e9eef3;"><header-view /></el-header>
+      <el-header style="height:50px;border-bottom:2px solid #e9eef3;"><header-view /></el-header>
       <el-container>
         <el-aside width="260px"><aside-view /></el-aside>
         <el-main><router-view></router-view></el-main>
@@ -34,7 +34,7 @@ export default {
   background-color: #3D4751;
   color: #333;
   text-align: center;
-  line-height: 100px;
+  line-height: 50px;
   
 }
 

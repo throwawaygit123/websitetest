@@ -14,8 +14,9 @@
           :placeholder="$t('m.ekts')"/>
     <el-table :data="tableData" border style="width: 100%">
         
-
-      <el-table-column prop="date" :label="$t('m.hospitalnumber')" width="170">
+      <el-table-column prop="date" :label="$t('m.hospitalid')" width="170">
+      </el-table-column>
+      <el-table-column prop="num" :label="$t('m.hospitalnumber')" width="170">
       </el-table-column>
       <!-- <el-table-column prop="name" label="Role(角色)" width="200"> </el-table-column> -->
       <el-table-column prop="admin" :label="$t('m.hospitalname')" width="300">
@@ -62,26 +63,31 @@ export default {
     return {
       tableData: [
         {
+          num:'77524258',
           date: "1",
           name: "75 Huanghe Road",
           admin: "First Affiliated Hospital",
         },
         {
+          num:'9823547',
           date: "2",
           name: "34 Jinji Road",
           admin: "Second Affiliated Hospital",
         },
         {
+          num:'5157558',
           date: "3",
           name: "265 Jinsha Lake",
           admin: "The Third Affiliated Hospital",
         },
         {
+          num:'96424258',
           date: "4",
           name: "63 Jucai Road",
           admin: "The Fourth Affiliated Hospital",
         },
         {
+          num:'77511458',
           date: "5",
           name: "586 Yingbin Road",
           admin: "The Fourth Affiliated Hospital",

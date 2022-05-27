@@ -22,7 +22,13 @@
           </template>
         </router-link>
       </el-table-column>
-
+      <el-table-column prop="name" :label="$t('m.testresult')" width="150">
+        <router-link to="result2">
+          <template>
+            <el-tag type="success">{{ $t("m.clicktoview") }}</el-tag>
+          </template>
+        </router-link>
+      </el-table-column>
       <el-table-column prop="name" :label="$t('m.uaf')" width="230">
         <!-- <router-link to="/historymedical"> -->
         <template>
@@ -44,13 +50,8 @@
         <!-- </router-link> -->
       </el-table-column>
 
-      <el-table-column prop="name" :label="$t('m.testresult')" width="150">
-        <router-link to="result2">
-          <template>
-            <el-tag type="success">{{ $t("m.clicktoview") }}</el-tag>
-          </template>
-        </router-link>
-      </el-table-column>
+      
+
       <el-table-column prop="address" :label="$t('m.operation')">
         <template slot-scope="scope">
           <el-button size="mini" @click="handleEdit(scope.$index, scope.row)">

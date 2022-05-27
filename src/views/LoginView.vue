@@ -28,7 +28,7 @@
        
         <el-form-item>
 
-          <router-link to="/">
+          <router-link to="/index">
             <el-button  class="btn" type="primary" @click="submitForm('ruleForm')"
             >{{ $t("m.submit") }}</el-button
           >
