@@ -31,7 +31,7 @@ export const m = {
     doctor:'Doctor',//医生
     enable:'Enable',//启用
     rolename:'Role Name',//角色名称
-    menupermissions:'Menupermissions',//菜单权限
+    menupermissions:'Permissions',//菜单权限
     userid:'User ID',//用户id
     role:'Role',//角色
     username:'User Name',//用户名
@@ -40,6 +40,8 @@ export const m = {
     doctorname:'Doctorname',//医生名称
     password:'Password',//密码
     confirmpasdsword:'Confirm password',//确认密码
+    nurse:'Nurse Role',
+    patient:'Patient Role',
     patientid:'Patient Id',//病人ID
     patientidname:'Patient Name',//病人姓名
     intreatment:'In treatment',//就诊中
@@ -120,33 +122,36 @@ export const m = {
     portnumber:'Port Number',
     switchaccount:'Switch account',
     exitlogin:'Exit login',
-    uaf:'Upload attachment file',
-    clickupload:'Click upload',
-    date:'Test time',
+    uaf:'Upload Attachment File',
+    clickupload:'Click Upload',
+    date:'Test Time',
     results:'Results',
-    clicktoview:'Click to view',
+    clicktoview:'Click To View',
     details:'Details',
-    parametername:'Parameter name',
-    parameterrange:'Parameter range',
-    parametervalue:'Parameter value',
-    arameterdescription:'Parameter description',
-    parameterresults:'Parameter results',
+    parametername:'Parameter Name',
+    parameterrange:'Parameter Range',
+    parametervalue:'Parameter Value',
+    arameterdescription:'Parameter Description',
+    parameterresults:'Parameter Results',
     address:'Address',
     dateofbirth:'Date of birth',
     dateofbirth1:'Please enter your date of birth',
     hospitaladdress:'Hospital address',
     petha:'Please enter the hospital address',
     // meta:{role:'Role'},
-    viewdetails:'View details',
-    down:'Down Load',
-    downall:'Down Load All',
+    viewdetails:'View Details',
+    down:'Download',
+    downall:'Download All',
     historytest:'History Test',
     myaccount:'My Account',
     aboutus:'About us',
     recentpatient:'Recent patient',
     accountid:'Account ID',
     hospitalid:'Hospital ID',
-    doctorid:'Doctor ID'
+    doctorid:'Doctor ID',
+    morning:'Good Morning ',
+    payment:'Payment',
+    subscription:'Subscription'
 
 
 }

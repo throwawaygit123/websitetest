@@ -4,9 +4,9 @@
       <el-col>
         <el-menu
           class="el-menu-vertical-demo"
-          background-color="#3D4751"
-          text-color="#fff"
-          active-text-color="#ffd04b"
+          background-color="#fff"
+          text-color="#333"
+          active-text-color="#eb5350"
           @open="handleOpen"
           @close="handleClose"
           :collapse="isCollapse"
@@ -21,12 +21,24 @@
 
           <router-link to="role">
             <el-menu-item index="1">
-              <i class="el-icon-user-solid" style="color: white"></i>
+              <i class="el-icon-user-solid" style="color: #333;"></i>
               <span slot="title" style="font-size: 17px">{{ $t("m.rolemanagement") }}</span>
             </el-menu-item>
           </router-link>
 
-          <el-submenu index="2">
+
+          <router-link to="globalaccount">
+            <el-menu-item index="2">
+              <i class="el-icon-s-home" style="color: #333"></i>
+              <span slot="title" style="font-size: 17px">
+                {{
+                $t("m.accountmanagement")
+                }}
+              </span>
+            </el-menu-item>
+          </router-link>
+
+          <!-- <el-submenu index="2">
             <template slot="title">
               <i class="el-icon-s-home"></i>
 
@@ -36,7 +48,8 @@
                 }}
               </span>
             </template>
-            <!-- <el-menu-item index="1-4">Patient information(病人信息)</el-menu-item> -->
+          
+            
             <router-link to="/globalaccount">
               <el-menu-item index="1-4">
                 <span style="font-size: 14px">
@@ -60,11 +73,11 @@
                 <span style="font-size: 14px">{{ $t("m.doctoraccount") }}</span>
               </el-menu-item>
             </router-link>
-          </el-submenu>
+          </el-submenu> -->
 
           <router-link to="hospital">
             <el-menu-item index="3">
-              <i class="el-icon-office-building" style="color: white"></i>
+              <i class="el-icon-office-building" style="color: #333"></i>
               <span slot="title" style="font-size: 17px">
                 {{
                 $t("m.hospiatalmanagement")
@@ -75,7 +88,7 @@
 
           <router-link to="/device">
             <el-menu-item index="4">
-              <i class="el-icon-s-opportunity" style="color: white"></i>
+              <i class="el-icon-s-opportunity" style="color: #333"></i>
               <span slot="title" style="font-size: 17px">
                 {{
                 $t("m.devicemanagement")
@@ -86,7 +99,7 @@
           
            <router-link to="/personalinformation">
             <el-menu-item index="5">
-              <i class="el-icon-s-custom" style="color: white"></i>
+              <i class="el-icon-s-custom" style="color: #333"></i>
               <span slot="title" style="font-size: 17px">
                 {{
                 $t("m.patientmanagement")
@@ -126,12 +139,12 @@ export default {
 .el-menu--collapse {
   width: 150px !important;
 }
-.el-menu-vertical-demo {
+/* .el-menu-vertical-demo {
   border-right-color: #3d4751;
-}
+} */
 
 .el-submenu__title i {
-  color: white !important;
+  color: #333 !important;
 }
 .el-submenu__title {
   font-size: 16px !important;

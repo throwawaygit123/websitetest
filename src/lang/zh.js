@@ -40,6 +40,8 @@ export const m = {
     doctorname: '医生名称',
     password: '密码',
     confirmpasdsword: '确认密码',
+    nurse:'护士',
+    patient:'病人',
     patientid: '病人ID',
     patientidname: '病人名称',
     intreatment: '就诊中',
@@ -149,7 +151,10 @@ export const m = {
     recentpatient:'最近病人',
     accountid:'全局ID',
     hospitalid:'医院ID',
-    doctorid:'医生ID'
+    doctorid:'医生ID',
+    morning:'早上好',
+    payment:'支付',
+    subscription:'订阅'
 
 
 

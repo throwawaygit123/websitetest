@@ -12,9 +12,41 @@
           class="demo-ruleForm"
           style="padding:15px 15px;"
         >
-          <el-form-item :label="$t('m.username')">
-            <el-input v-model.number="ruleForm.age"></el-input>
+          <el-form-item :label="$t('m.rolename')">
+            <el-select v-model="ruleForm.rolename" :placeholder="$t('m.slo')">
+              <el-option :label="$t('m.globaladmin')" value="globaladmin"></el-option>
+              <el-option :label="$t('m.hospitaladmin')" value="hospitaladmin"></el-option>
+              <el-option :label="$t('m.doctorrole')" value="doctorrole"></el-option>
+
+              <el-option :label="$t('m.nurse')" value="nurse"></el-option>
+              <el-option :label="$t('m.patient')" value="patient"></el-option>
+              <!-- <el-option label="" value="beijing"></el-option> -->
+            </el-select>
           </el-form-item>
+          <el-form-item :label="$t('m.familyname')">
+              <el-input v-model="ruleForm.familyName" :placeholder="$t('m.pefn')"></el-input>
+            </el-form-item>
+            <el-form-item :label="$t('m.firstname')">
+              <el-input v-model="ruleForm.firstName" :placeholder="$t('m.pefirstn')"></el-input>
+            </el-form-item>
+            <el-form-item :label="$t('m.middlename')">
+              <el-input v-model="ruleForm.middleName" :placeholder="$t('m.pemn')"></el-input>
+            </el-form-item>
+            <el-form-item :label="$t('m.gender')">
+              <el-select v-model="ruleForm.gender" :placeholder="$t('m.slo')">
+                <el-option :label="$t('m.female')" value="Female"></el-option>
+                <el-option :label="$t('m.male')" value="Male"></el-option>
+                <!-- <el-option label="" value="beijing"></el-option> -->
+              </el-select>
+            </el-form-item>
+
+            <el-form-item :label="$t('m.dateofbirth')">
+              <!-- <el-date-picker v-model="form.dataBirth" type="date" ></el-date-picker> -->
+              <el-input v-model="ruleForm.dataBirth" :placeholder="$t('m.dateofbirth1')"></el-input>
+            </el-form-item>
+          <!-- <el-form-item :label="$t('m.username')">
+            <el-input v-model.number="ruleForm.age"></el-input>
+          </el-form-item> -->
           <el-form-item :label="$t('m.password')" prop="pass">
             <el-input type="password" v-model="ruleForm.pass" autocomplete="off"></el-input>
           </el-form-item>
@@ -100,7 +132,7 @@ export default {
       this.$refs[formName].validate(valid => {
         if (valid) {
           // alert("submit!");
-         this.$router.go(-1)
+          this.$router.go(-1);
         } else {
           console.log("error submit!!");
           return false;

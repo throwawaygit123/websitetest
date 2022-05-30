@@ -55,7 +55,7 @@ const routes = [
       {
         path: 'addv2',
         name: 'addv2',
-        meta: { title: "Hospital Add" },
+        meta: { title: "Hospital Subscription" },
         component: () => import('@/layout/Personal/AddView2.vue')
 
       }
@@ -147,7 +147,7 @@ const routes = [
       {
         path:'resultw',
         name:'resultw',
-        meta:{title:'Results Two'},
+        meta:{title:'2021-10-5'},
         component: () => import('@/layout/testresults/ResultsTwo.vue')
 
       },

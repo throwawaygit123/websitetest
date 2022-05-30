@@ -2,7 +2,7 @@
   <div class="role">
     <el-row style="float:left">
       <router-link to="/roleadd" style="text-decoration: none; color: white">
-        <el-button type="primary" plain style="float: left; text-align: center;">{{ $t("m.add") }}</el-button>
+        <el-button type="primary" :style="selfstyle" plain style="float: left; text-align: center;">{{ $t("m.add") }}</el-button>
       </router-link>
     </el-row>
     <el-input
@@ -12,9 +12,9 @@
       :placeholder="$t('m.ekts')"
     />
     <el-table :data="tableData" border style="width: 100%">
-      <el-table-column prop="num" :label="$t('m.userid')" width="150"></el-table-column>
-      <el-table-column prop="username" :label="$t('m.username')" width="250"></el-table-column>
-      <el-table-column prop="rolename" :label="$t('m.rolename')" width="250"></el-table-column>
+      <el-table-column prop="num" :label="$t('m.userid')" width="250"></el-table-column>
+      <!-- <el-table-column prop="username" :label="$t('m.username')" width="250"></el-table-column> -->
+      <el-table-column prop="rolename" :label="$t('m.rolename')" width="350"></el-table-column>
 
       <!-- <el-table-column prop="type" :label="$t('m.state')" width="250">
         <template>
@@ -53,51 +53,57 @@
 export default {
   data() {
     return {
+       selfstyle: {
+					color: "white",
+					
+          backgroundColor: "#eb5350",
+          border:'none'
+				},
       tableData: [
         {
           num: 1,
           username: "Ada",
-          rolename: "Global Account"
+          rolename: "Global Role"
         },
         {
           num: 2,
           username: "Carry",
-          rolename: "Global Account"
+          rolename: "Global Role"
         },
         {
           num: 3,
           username: "Amy",
-          rolename: "Global Account"
+          rolename: "Global Role"
         },
         {
           num: 4,
           username: "Angela",
-          rolename: "Global Account"
+          rolename: "Global Role"
         },
         {
           num: 5,
           username: "Cindy",
-          rolename: "Global Account"
+          rolename: "Nurse Role"
         },
         {
           num: 6,
           username: "Albert",
-          rolename: "Hospital Account"
+          rolename: "Hospital Role"
         },
         {
           num: 7,
           username: "Andy",
-          rolename: "Hospital Account"
+          rolename: "Hospital Role"
         },
         {
           num: 8,
           username: "Edward",
-          rolename: "Doctor Account"
+          rolename: "Patient Role"
         },
         {
           num: 9,
           username: "Edwin",
-          rolename: "Doctor Account"
+          rolename: "Doctor Role"
         }
       ]
     };

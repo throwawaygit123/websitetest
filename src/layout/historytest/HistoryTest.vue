@@ -1,10 +1,7 @@
 <template>
   <div>
-
-
     <div class="box">
       <ul style="width:100%;padding-left:43%; height:30px;text-align:center;">
-
         <li>
           <div style="float:left ;margin-top:20px; width:30px;height:2px;background:#ce2127;"></div>
           <p style="float:right;line-height:normal;font-size:13px;margin-left:3px">Max</p>
@@ -22,7 +19,7 @@
             :md="12"
             :lg="12"
             :xl="12"
-            style="border:1px solid #999;"
+            style="border:1px solid #999;border-left:none;"
             class="bib1"
           >
             <div class="foot-1" id="main1"></div>
@@ -49,7 +46,7 @@
             :md="12"
             :lg="12"
             :xl="12"
-            style="border:1px solid #999;"
+            style="border:1px solid #999;border-left:none;"
             class="bib1"
           >
             <div class="foot-1" id="main3"></div>
@@ -75,7 +72,7 @@
             :md="12"
             :lg="12"
             :xl="12"
-            style="border:1px solid #999;"
+            style="border:1px solid #999;border-left:none;"
             class="bib1"
           >
             <div class="foot-1" id="main5"></div>
@@ -101,7 +98,7 @@
             :md="12"
             :lg="12"
             :xl="12"
-            style="border:1px solid #999;"
+            style="border:1px solid #999;border-left:none;"
             class="bib1"
           >
             <div class="foot-1" id="main7"></div>
@@ -128,7 +125,7 @@
             :md="12"
             :lg="12"
             :xl="12"
-            style="border:1px solid #999;"
+            style="border:1px solid #999;border-left:none;"
             class="bib1"
           >
             <div class="foot-1" id="main9"></div>
@@ -162,9 +159,7 @@ export default {
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [65,70,68,78,70,60,80,70,70,90,
-        
-      ];
+      let data = [65, 70, 68, 78, 70, 60, 80, 70, 70, 90];
       let yMax = 100;
       let dataShadow = [];
       for (let i = 0; i < data.length; i++) {
@@ -205,22 +200,26 @@ export default {
         xAxis: [
           {
             type: "category",
+            name: "days",
+            axisLabel: { interval: 0, rotate: 30 },
             axisTick: { show: false },
             data: [
-              "one day",
-              "two day",
-              "three day",
-              "four day",
-              "five day",
-              "six day",
-              "seven day",
-              "eight day",
-              "nine day",
-              "ten day"
+              "2021-10-5 11:00",
+              "2021-10-6 11:00",
+              "2021-10-7 11:00",
+              "2021-10-8 11:00",
+              "2021-10-9 11:00",
+              "2021-10-10 11:00",
+              "2021-10-11 11:00",
+              "2021-10-12 11:00",
+              "2021-10-13 11:00",
+              "2021-10-14 11:00"
             ]
           }
         ],
         yAxis: {
+          name: "value",
+
           axisLine: {
             show: true
           },
@@ -291,8 +290,7 @@ export default {
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [100,110,108,110,115,120,123,125,135,136,
-      ];
+      let data = [100, 110, 108, 110, 115, 120, 123, 125, 135, 136];
       let yMax = 100;
       let dataShadow = [];
       for (let i = 0; i < data.length; i++) {
@@ -333,22 +331,26 @@ export default {
         xAxis: [
           {
             type: "category",
+            name: "days",
+            axisLabel: { interval: 0, rotate: 30 },
             axisTick: { show: false },
             data: [
-              "one day",
-              "two day",
-              "three day",
-              "four day",
-              "five day",
-              "six day",
-              "seven day",
-              "eight day",
-              "nine day",
-              "ten day"
+              "2021-10-5 11:00",
+              "2021-10-6 11:00",
+              "2021-10-7 11:00",
+              "2021-10-8 11:00",
+              "2021-10-9 11:00",
+              "2021-10-10 11:00",
+              "2021-10-11 11:00",
+              "2021-10-12 11:00",
+              "2021-10-13 11:00",
+              "2021-10-14 11:00"
             ]
           }
         ],
         yAxis: {
+          name: "value",
+
           axisLine: {
             show: true
           },
@@ -417,9 +419,7 @@ export default {
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [45,48,50,52,55,61,62,64,66,66
-       
-      ];
+      let data = [45, 48, 50, 52, 55, 61, 62, 64, 66, 66];
       let yMax = 100;
       let dataShadow = [];
       for (let i = 0; i < data.length; i++) {
@@ -460,22 +460,26 @@ export default {
         xAxis: [
           {
             type: "category",
+            name: "days",
+            axisLabel: { interval: 0, rotate: 30 },
             axisTick: { show: false },
             data: [
-              "one day",
-              "two day",
-              "three day",
-              "four day",
-              "five day",
-              "six day",
-              "seven day",
-              "eight day",
-              "nine day",
-              "ten day"
+              "2021-10-5 11:00",
+              "2021-10-6 11:00",
+              "2021-10-7 11:00",
+              "2021-10-8 11:00",
+              "2021-10-9 11:00",
+              "2021-10-10 11:00",
+              "2021-10-11 11:00",
+              "2021-10-12 11:00",
+              "2021-10-13 11:00",
+              "2021-10-14 11:00"
             ]
           }
         ],
         yAxis: {
+          name: "value",
+
           axisLine: {
             show: true
           },
@@ -549,7 +553,7 @@ export default {
       // var option;
 
       // let data = [0.158,0.19,0.25,0.3,0.4,0.18,0.56,0.2,0.34,0.3
-        
+
       // ];
       // let yMax = 100;
       // let dataShadow = [];
@@ -669,7 +673,7 @@ export default {
 
       // option && myChart.setOption(option);
 
-       var chartDom = document.getElementById("main4");
+      var chartDom = document.getElementById("main10");
       var myChart = echarts.init(chartDom);
       var option;
 
@@ -700,10 +704,25 @@ export default {
         },
         xAxis: {
           type: "category",
-          boundaryGap: false,
-          data: ["one day", "two day", "three day", "four day", "five day", "six day","seven day",'eight day']
+          name: "days",
+          axisLabel: { interval: 0, rotate: 30 },
+          axisTick: { show: false },
+          data: [
+            "2021-10-5 11:00",
+            "2021-10-6 11:00",
+            "2021-10-7 11:00",
+            "2021-10-8 11:00",
+            "2021-10-9 11:00",
+            "2021-10-10 11:00",
+            "2021-10-11 11:00",
+            "2021-10-12 11:00",
+            "2021-10-13 11:00",
+            "2021-10-14 11:00"
+          ]
         },
         yAxis: {
+          name: "value",
+
           type: "value",
           axisLabel: {
             formatter: "{value} "
@@ -713,19 +732,21 @@ export default {
           {
             name: "test result",
             type: "line",
-            data: [0.15, 0.47,0.35,0.34,0.31,0.29,0.30,0.23, 0.24, 0.35, ]
+
+            data: [0.15, 0.47, 0.35, 0.34, 0.31, 0.29, 0.3, 0.23, 0.24, 0.35]
           },
           {
             name: "highest value",
 
             type: "line",
-            data: [0.4, 0.4,0.4,0.4,0.4,0.4, 0.4, 0.4,0.4,0.4]
+            color: "#ce2157",
+            data: [0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4]
           },
           {
             name: "minimum value",
-
+            color: "#58595b",
             type: "line",
-            data: [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2],
+            data: [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2],
             markPoint: {}
           }
         ]
@@ -738,9 +759,7 @@ export default {
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [7.5,5,6.8,4.8,8.4,3,6,12,10,8
-        
-      ];
+      let data = [7.5, 5, 6.8, 4.8, 8.4, 3, 6, 12, 10, 8];
       let yMax = 100;
       let dataShadow = [];
       for (let i = 0; i < data.length; i++) {
@@ -781,22 +800,26 @@ export default {
         xAxis: [
           {
             type: "category",
+            name: "days",
+            axisLabel: { interval: 0, rotate: 30 },
             axisTick: { show: false },
             data: [
-              "one day",
-              "two day",
-              "three day",
-              "four day",
-              "five day",
-              "six day",
-              "seven day",
-              "eight day",
-              "nine day",
-              "ten day"
+              "2021-10-5 11:00",
+              "2021-10-6 11:00",
+              "2021-10-7 11:00",
+              "2021-10-8 11:00",
+              "2021-10-9 11:00",
+              "2021-10-10 11:00",
+              "2021-10-11 11:00",
+              "2021-10-12 11:00",
+              "2021-10-13 11:00",
+              "2021-10-14 11:00"
             ]
           }
         ],
         yAxis: {
+          name: "value",
+
           axisLine: {
             show: true
           },
@@ -866,9 +889,7 @@ export default {
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [7.5,5,6.8,4.8,8.4,3,6,12,10,8
-       
-      ];
+      let data = [7.5, 5, 6.8, 4.8, 8.4, 3, 6, 12, 10, 8];
       let yMax = 100;
       let dataShadow = [];
       for (let i = 0; i < data.length; i++) {
@@ -909,22 +930,26 @@ export default {
         xAxis: [
           {
             type: "category",
+            name: "days",
+            axisLabel: { interval: 0, rotate: 30 },
             axisTick: { show: false },
             data: [
-              "one day",
-              "two day",
-              "three day",
-              "four day",
-              "five day",
-              "six day",
-              "seven day",
-              "eight day",
-              "nine day",
-              "ten day"
+              "2021-10-5 11:00",
+              "2021-10-6 11:00",
+              "2021-10-7 11:00",
+              "2021-10-8 11:00",
+              "2021-10-9 11:00",
+              "2021-10-10 11:00",
+              "2021-10-11 11:00",
+              "2021-10-12 11:00",
+              "2021-10-13 11:00",
+              "2021-10-14 11:00"
             ]
           }
         ],
         yAxis: {
+          name: "value",
+
           axisLine: {
             show: true
           },
@@ -994,9 +1019,7 @@ export default {
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [0.45,0.5038,0.68,0.48,0.844,0.3,0.6,0.2,0.4,0.5038
-     
-      ];
+      let data = [0.45, 0.5038, 0.68, 0.48, 0.844, 0.3, 0.6, 0.2, 0.4, 0.5038];
       let yMax = 100;
       let dataShadow = [];
       for (let i = 0; i < data.length; i++) {
@@ -1037,22 +1060,26 @@ export default {
         xAxis: [
           {
             type: "category",
+            name: "days",
+            axisLabel: { interval: 0, rotate: 30 },
             axisTick: { show: false },
             data: [
-              "one day",
-              "two day",
-              "three day",
-              "four day",
-              "five day",
-              "six day",
-              "seven day",
-              "eight day",
-              "nine day",
-              "ten day"
+              "2021-10-5 11:00",
+              "2021-10-6 11:00",
+              "2021-10-7 11:00",
+              "2021-10-8 11:00",
+              "2021-10-9 11:00",
+              "2021-10-10 11:00",
+              "2021-10-11 11:00",
+              "2021-10-12 11:00",
+              "2021-10-13 11:00",
+              "2021-10-14 11:00"
             ]
           }
         ],
         yAxis: {
+          name: "value",
+
           axisLine: {
             show: true
           },
@@ -1118,13 +1145,11 @@ export default {
       option && myChart.setOption(option);
     },
     eight() {
-      var chartDom = document.getElementById("main8");
+      var chartDom = document.getElementById("main4");
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [0.45,0.5038,0.68,0.48,0.844,0.3,0.6,0.2,0.4,0.5038
-     
-      ];
+      let data = [0.158, 0.19, 0.25, 0.3, 0.4, 0.18, 0.56, 0.2, 0.34, 0.3];
       let yMax = 100;
       let dataShadow = [];
       for (let i = 0; i < data.length; i++) {
@@ -1132,7 +1157,7 @@ export default {
       }
       option = {
         title: {
-          text: "SIC"
+          text: "SPO2"
           //   subtext: "Feature Sample: Gradient Color, Shadow, Click Zoom"
         },
         legend: {
@@ -1165,22 +1190,26 @@ export default {
         xAxis: [
           {
             type: "category",
+            name: "days",
+            axisLabel: { interval: 0, rotate: 30 },
             axisTick: { show: false },
             data: [
-              "one day",
-              "two day",
-              "three day",
-              "four day",
-              "five day",
-              "six day",
-              "seven day",
-              "eight day",
-              "nine day",
-              "ten day"
+              "2021-10-5 11:00",
+              "2021-10-6 11:00",
+              "2021-10-7 11:00",
+              "2021-10-8 11:00",
+              "2021-10-9 11:00",
+              "2021-10-10 11:00",
+              "2021-10-11 11:00",
+              "2021-10-12 11:00",
+              "2021-10-13 11:00",
+              "2021-10-14 11:00"
             ]
           }
         ],
         yAxis: {
+          name: "value",
+
           axisLine: {
             show: true
           },
@@ -1208,28 +1237,26 @@ export default {
               ])
             },
             data: data,
-
             markLine: {
               symbol: "none",
-
               data: [
                 {
                   name: "MIN",
                   value: "60",
                   xAxis: "4",
-                  yAxis: "0.4",
+                  yAxis: "0.2",
                   lineStyle: {
                     type: "solid",
                     width: 3,
 
-                    color: "#6d6e71"
+                    color: "#58595b"
                   }
                 },
                 {
                   name: "MAX",
                   value: "60",
                   xAxis: "4",
-                  yAxis: "0.5038",
+                  yAxis: "0.4",
                   lineStyle: {
                     type: "solid",
                     width: 3,
@@ -1246,13 +1273,11 @@ export default {
       option && myChart.setOption(option);
     },
     nine() {
-      var chartDom = document.getElementById("main9");
+      var chartDom = document.getElementById("main8");
       var myChart = echarts.init(chartDom);
       var option;
 
-      let data = [4.6,7.8,5.9,4.5,7.4,8,5.6,2.9,3.8,5.7
-        
-      ];
+      let data = [4.6, 7.8, 5.9, 4.5, 7.4, 8, 5.6, 2.9, 3.8, 5.7];
       let yMax = 100;
       let dataShadow = [];
       for (let i = 0; i < data.length; i++) {
@@ -1293,22 +1318,26 @@ export default {
         xAxis: [
           {
             type: "category",
+            name: "days",
+            axisLabel: { interval: 0, rotate: 30 },
             axisTick: { show: false },
             data: [
-              "one day",
-              "two day",
-              "three day",
-              "four day",
-              "five day",
-              "six day",
-              "seven day",
-              "eight day",
-              "nine day",
-              "ten day"
+              "2021-10-5 11:00",
+              "2021-10-6 11:00",
+              "2021-10-7 11:00",
+              "2021-10-8 11:00",
+              "2021-10-9 11:00",
+              "2021-10-10 11:00",
+              "2021-10-11 11:00",
+              "2021-10-12 11:00",
+              "2021-10-13 11:00",
+              "2021-10-14 11:00"
             ]
           }
         ],
         yAxis: {
+          name: "value",
+
           axisLine: {
             show: true
           },
@@ -1374,14 +1403,11 @@ export default {
       option && myChart.setOption(option);
     },
     ten() {
-      var chartDom = document.getElementById("main10");
+      var chartDom = document.getElementById("main9");
       var myChart = echarts.init(chartDom);
       var option;
-       
-      let data = [70,75,68,80,105,120,110,70,80,60
-     
-        
-      ];
+
+      let data = [70, 75, 68, 80, 105, 120, 110, 70, 80, 60];
       let yMax = 100;
       let dataShadow = [];
       for (let i = 0; i < data.length; i++) {
@@ -1422,22 +1448,26 @@ export default {
         xAxis: [
           {
             type: "category",
+            name: "days",
+            axisLabel: { interval: 0, rotate: 30 },
             axisTick: { show: false },
             data: [
-              "one day",
-              "two day",
-              "three day",
-              "four day",
-              "five day",
-              "six day",
-              "seven day",
-              "eight day",
-              "nine day",
-              "ten day"
+              "2021-10-5 11:00",
+              "2021-10-6 11:00",
+              "2021-10-7 11:00",
+              "2021-10-8 11:00",
+              "2021-10-9 11:00",
+              "2021-10-10 11:00",
+              "2021-10-11 11:00",
+              "2021-10-12 11:00",
+              "2021-10-13 11:00",
+              "2021-10-14 11:00"
             ]
           }
         ],
         yAxis: {
+          name: "value",
+
           axisLine: {
             show: true
           },
@@ -1496,7 +1526,6 @@ export default {
             }
           }
         ]
-
       };
 
       option && myChart.setOption(option);
@@ -1520,7 +1549,9 @@ export default {
 <style scoped>
 .box {
   width: 100%;
-  height: 670px;
+  /* height: 670px; */
+  background-color: white;
+  padding: 5px 5px;
 }
 .foot {
   margin-bottom: 20px;

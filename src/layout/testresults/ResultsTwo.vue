@@ -146,7 +146,7 @@ export default {
         {
           date: 1,
           name: "HR",
-          num: "[100,60]",
+          num: "[60,100]",
           num1: "60",
           result: "Good",
           string:
@@ -155,7 +155,7 @@ export default {
         {
           date: 2,
           name: "SP",
-          num: "[120,100]",
+          num: "[100,120]",
           num1: "110",
           result: "Great",
 
@@ -165,7 +165,7 @@ export default {
         {
           date: 3,
           name: "DP",
-          num: "[70,60]",
+          num: "[60,70]",
           num1: "60",
           result: "Good",
 
@@ -175,7 +175,7 @@ export default {
         {
           date: 4,
           name: "SPO2",
-          num: "[0.4,0.2]",
+          num: "[0.2,0.4]",
           num1: "0.1",
           result: "Bad",
 
@@ -195,7 +195,7 @@ export default {
         {
           date: 6,
           name: "PI",
-          num: "[70,60]",
+          num: "[60,70]",
           num1: "55",
           result: "Very Bad",
 
@@ -205,7 +205,7 @@ export default {
         {
           date: 7,
           name: "PPT",
-          num: "[0.4,0.2]",
+          num: "[0.2,0.4]",
           num1: "0.3",
           result: "Great",
 
@@ -215,7 +215,7 @@ export default {
         {
           date: 8,
           name: "AIC",
-          num: "[120,100]",
+          num: "[100,120]",
           num1: "115",
           result: "Bad",
 
@@ -235,7 +235,7 @@ export default {
         {
           date: 10,
           name: "MAP",
-          num: "[70,60]",
+          num: "[60,70]",
           num1: "70",
           result: "Good",
 
@@ -304,7 +304,7 @@ export default {
         {
           date: 7,
           name: "CVD",
-          num: "[0.4,0.2]",
+          num: "[0.2,0.4]",
           num1: "0.3",
           result: "Great",
 
@@ -314,7 +314,7 @@ export default {
         {
           date: 8,
           name: "EVA",
-          num: "[120,100]",
+          num: "[100,120]",
           num1: "115",
           result: "Bad",
 
@@ -334,7 +334,7 @@ export default {
         {
           date: 10,
           name: "EVA",
-          num: "[70,60]",
+          num: "[60,70]",
           num1: "70",
           result: "Good",
 
@@ -345,7 +345,7 @@ export default {
         {
           date: 11,
           name: "BCA",
-          num: "[0.4,0.2]",
+          num: "[0.2,0.4]",
           num1: "0.3",
           result: "Great",
 
@@ -355,7 +355,7 @@ export default {
         {
           date: 12,
           name: "AEI",
-          num: "[120,100]",
+          num: "[100,120]",
           num1: "115",
           result: "Bad",
 
@@ -375,7 +375,7 @@ export default {
         {
           date: 14,
           name: "AIX",
-          num: "[70,60]",
+          num: "[60,70]",
           num1: "70",
           result: "Good",
 
@@ -395,7 +395,7 @@ export default {
         {
           date: 15,
           name: "AASI",
-          num: "[70,60]",
+          num: "[60,70]",
           num1: "70",
           result: "Good",
 
@@ -407,7 +407,7 @@ export default {
         {
           date: 1,
           name: "ADS",
-          num: "[100,60]",
+          num: "[60,100]",
           num1: "60",
           result: "Good",
           string:

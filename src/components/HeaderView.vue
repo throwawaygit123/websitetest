@@ -1,8 +1,8 @@
 <template>
   <div style="width:100%;height:100%;">
     <div style="width:230px;height:50px;float:left;">
-       <img src="../assets/logo_03.png" alt style="max-width:54px;float:left;margin-left:0px;margin-top:2px" />
-       <p style="float:left;color:white; margin:5px 0 0 3px;font-size:30px">QuanBio</p>
+       <img src="../assets/logo_03.png" alt style="max-width:44px;float:left;margin-left:0px;margin-top:7px" />
+       <p style="float:left;color:#333; margin:5px 0 0 3px;font-size:30px">QuanBio</p>
     </div>
    
     <el-button
@@ -31,7 +31,7 @@
 
       <el-dropdown class="xiala"  style="float:right">
         <span class="el-dropdown-link">
-          <span style="color:white;font-size:15px;">db</span>
+          <span style="color:#333;font-size:15px;">db</span>
           <i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <el-dropdown-menu slot="dropdown" style=" width:200px">
@@ -40,7 +40,7 @@
                 >{{$t('m.switchaccount')}}</el-dropdown-item
               >
             </router-link>
-          <router-link to="/" style="text-decoration: none">
+          <router-link to="/index" style="text-decoration: none">
               <el-dropdown-item icon="el-icon-switch-button"
                 >{{$t('m.exitlogin')}}</el-dropdown-item
               >
@@ -79,11 +79,11 @@ export default {
   float: left;
   margin-left: 20px;
   line-height: 50px !important;
-  color: white !important;
+  color: #333 !important;
 }
 .el-breadcrumb__inner a,
 .el-breadcrumb__inner.is-link {
-  color: white !important;
+  color: #333 !important;
 }
 .h2-2{
   width: 30px;

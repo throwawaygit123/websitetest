@@ -10,16 +10,19 @@
     >
       <el-form-item :label="$t('m.rolename')">
         <el-select v-model="ruleForm.rolename" :placeholder="$t('m.slo')">
+          
           <el-option :label="$t('m.globaladmin')" value="globaladmin"></el-option>
           <el-option :label="$t('m.hospitaladmin')" value="hospitaladmin"></el-option>
           <el-option :label="$t('m.doctorrole')" value="doctorrole"></el-option>
-
+         
+          <el-option :label="$t('m.nurse')" value="nurse"></el-option>
+           <el-option :label="$t('m.patient')" value="patient"></el-option>
           <!-- <el-option label="" value="beijing"></el-option> -->
         </el-select>
       </el-form-item>
-      <el-form-item :label="$t('m.username')" prop="name">
+      <!-- <el-form-item :label="$t('m.username')" prop="name">
         <el-input v-model="ruleForm.name"></el-input>
-      </el-form-item>
+      </el-form-item> -->
       <el-form-item :label="$t('m.menupermissions')" prop="name">
         <el-tree
           :data="data"
@@ -33,7 +36,7 @@
 
       <el-form-item>
         <router-link to="./role">
-          <el-button type="primary" @click="submitForm('ruleForm')">
+          <el-button type="primary" @click="submitForm('ruleForm')" :style="selfstyle">
             {{
             $t("m.determination")
             }}
@@ -50,6 +53,12 @@
 export default {
   data() {
     return {
+      selfstyle: {
+					color: "white",
+					
+          backgroundColor: "#eb5350",
+          border:'none'
+				},
       ruleForm: {
         name: "",
         rolename:''
@@ -70,23 +79,24 @@ export default {
         ]
       },
       data: [
+        {id:1,label:'Role Management'},
         {
           id: 2,
           label: 'Account Management',
-          children: [
-            {
-              id: 5,
-              label: 'Global Administrator Account'
-            },
-            {
-              id: 6,
-              label:'Hospital Admin Account'
-            },
-            {
-              id: 7,
-              label: 'Doctor Account',
-            }
-          ]
+          // children: [
+          //   {
+          //     id: 5,
+          //     label: 'Global Administrator Account'
+          //   },
+          //   {
+          //     id: 6,
+          //     label:'Hospital Admin Account'
+          //   },
+          //   {
+          //     id: 7,
+          //     label: 'Doctor Account',
+          //   }
+          // ]
         },
         {
           id: 3,
@@ -99,20 +109,20 @@ export default {
         {
           id: 4,
           label: 'Patient Management',
-          children: [
-            {
-              id: 8,
-              label: 'Personal Information'
-            },
-            {
-              id: 9,
-              label: 'Test Result'
-            },
-            {
-              id: 10,
-              label: 'Patient History Testing'
-            }
-          ]
+          // children: [
+          //   {
+          //     id: 8,
+          //     label: 'Personal Information'
+          //   },
+          //   {
+          //     id: 9,
+          //     label: 'Test Result'
+          //   },
+          //   {
+          //     id: 10,
+          //     label: 'Patient History Testing'
+          //   }
+          // ]
         }
       ],
       defaultProps: {

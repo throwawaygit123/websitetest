@@ -3,20 +3,22 @@
     <div class="one1">
       <el-row style="float:left;width:500px">
         <p
-          style="float:left;display:inline-block;width:200px;line-height:normal;font-weight:600;font-size:20px;"
-        >Good morning</p>
+          style="color:#eb5350; float:left;display:inline-block;width:200px;line-height:normal;font-weight:600;font-size:20px;"
+        >{{$t("m.morning")}}</p>
       </el-row>
       <el-row style="float:right;margin-bottom:15px;width:250">
         <router-link to style="text-decoration: none; color: white">
           <el-button
             type="primary"
             plain
-            style="float:left; text-align: center;display:block;"
+            :style="selfstyle"
+            style="float:left; text-align: center;display:block; "
           >{{ $t("m.myaccount") }}</el-button>
         </router-link>
         <el-button
           type="primary"
           plain
+          :style="selfstyle"
           style="float:left; text-align: center;display:block;margin-left:5px"
         >{{ $t("m.aboutus") }}</el-button>
       </el-row>
@@ -101,9 +103,15 @@
 
 <script>
 export default {
-  // name:'',
   data() {
-    return {};
+    return {
+      selfstyle: {
+					color: "white",
+					
+          backgroundColor: "#eb5350",
+          border:'none'
+				}
+    };
   },
   created() {},
   mounted() {},
@@ -112,30 +120,29 @@ export default {
 </script>
 
 <style  scoped>
+.one{
+  background-color: white;
+  padding: 5px 5px;
+}
 .one1 {
   width: 100%;
   height: 50px;
-  /* background-color: pink; */
 }
 .one2 {
   width: 100%;
   height: 500px;
-  /* background-color: yellowgreen; */
 }
 .one2-2{
-  /* width: 100% ; */
   height: 30px;
   border-bottom: 1px solid #999;
 }
 .one2-2 li {
   list-style: none;
   line-height: 30px;
-  /* width: 100%; */
-  /* margin-left: 55px; */
   float: left;
 }
 .one2-2:hover{
-  background-color: gainsboro;
+  background-color: #f5a9a8;
 }
 p{
   margin: 0 0;
@@ -143,5 +150,23 @@ p{
 ul{
   margin: 0 0;
 }
-
+.el-button--primary.is-plain{
+  color:#eb5350;
+}
+/* .el-button--primary{
+  color:blue;
+} */
+/* .el-button–primary{
+color: #fff !important;
+background-color: #8B83D2 !important;
+border-color: #8B83D2 !important;
+}
+.el-button–primary:hover{
+background-color: #0ABBF9 !important;
+border-color: #0ABBF9 !important;
+}
+.el-button–primary:focus{
+background-color: #0ABBF9 !important;
+border-color: #0ABBF9 !important;
+} */
 </style>

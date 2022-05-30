@@ -14,10 +14,15 @@
           :placeholder="$t('m.ekts')"/>
     <el-table :data="tableData" border style="width: 100%">
       <el-table-column prop="date" :label="$t('m.accountid')" width="100">
+
+      </el-table-column><el-table-column prop="admin" :label='$t("m.rolename")'  width="200">
+          <template slot-scope="scope">
+            <el-tag>{{scope.row.role}}</el-tag>
+          </template>
       </el-table-column>
-      <!-- <el-table-column prop="name" label="Role(角色)" width="200"> </el-table-column> -->
       <el-table-column prop="admin" :label='$t("m.username")'  width="200">
       </el-table-column>
+      
       <el-table-column prop="name" :label='$t("m.email")' width="200">
         
       </el-table-column>
@@ -67,30 +72,63 @@ export default {
           date: "1",
           name: "coconut@outlook.com",
           admin: "Ada ",
+          role:'Global Role',
           pas:'*********'
         },
         {
           date: "2",
           name: "smithereens@outlook.com",
           admin: "Carry ",
+          role:'Global Role',
           pas:'*********'
         },
         {
           date: "3",
           name: "zing@outlook.com",
           admin: " Amy ",
+          role:'Hospital Role',
           pas:'*********'
         },
         {
           date: "4",
           name: "gazebo@outlook.com",
           admin: " Angela ",
+          role:'Hospital Role',
           pas:'*********'
         },
         {
           date: "5",
          name: "umbrella@outlook.com",
           admin: " Cindy ",
+          role:'Doctor Role',
+          pas:'*********'
+        },
+         {
+          date: "6",
+          name: "bubble @outlook.com",
+          role:'Nurse Role',
+          admin: "Lrene ",
+          pas:'*********'
+        },
+        {
+          date: "7",
+          name: "destiny@outlook.com",
+          role:'Doctor Role',
+          admin: "Edith ",
+          pas:'*********'
+        },
+        {
+          date: "8",
+          name: "galaxy@outlook.com",
+          role:'Paitent Role',
+          admin: " Mandy ",
+          pas:'*********'
+        },
+        {
+          date: "9",
+          name: " grace@outlook.com",
+          role:'Paitent Role',
+          admin: " Susan ",
           pas:'*********'
         }
       ],

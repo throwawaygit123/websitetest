@@ -14,17 +14,25 @@
           :placeholder="$t('m.ekts')"/>
     <el-table :data="tableData" border style="width: 100%">
         
-      <el-table-column prop="date" :label="$t('m.hospitalid')" width="170">
+      <el-table-column prop="date" :label="$t('m.hospitalid')" width="130">
       </el-table-column>
-      <el-table-column prop="num" :label="$t('m.hospitalnumber')" width="170">
+      <el-table-column prop="num" :label="$t('m.hospitalnumber')" width="150">
       </el-table-column>
       <!-- <el-table-column prop="name" label="Role(角色)" width="200"> </el-table-column> -->
-      <el-table-column prop="admin" :label="$t('m.hospitalname')" width="300">
+      <el-table-column prop="admin" :label="$t('m.hospitalname')" width="250">
       </el-table-column>
-      <el-table-column prop="name" :label="$t('m.address')" width="200">
+      <el-table-column prop="name" :label="$t('m.address')" width="180">
         
       </el-table-column>
-
+       <el-table-column prop="payment" :label="$t('m.subscription')" width="200">
+        <router-link to="addv2">
+          <template>
+            <el-tag type="success">{{ $t("m.clicktoview") }}</el-tag>
+          </template>
+        </router-link>
+          
+        
+      </el-table-column>
    
 
       <el-table-column prop="address" :label="$t('m.operation')" >
