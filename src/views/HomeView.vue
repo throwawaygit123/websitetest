@@ -3,7 +3,7 @@
     <el-container style="width:100%;height:100%">
       <el-header style="height:50px;border-bottom:2px solid #e9eef3;"><header-view /></el-header>
       <el-container>
-        <el-aside width="260px;margin-top:20px;"><aside-view /></el-aside>
+        <el-aside width="260px;"><aside-view /></el-aside>
         <el-main><router-view></router-view></el-main>
       </el-container>
     </el-container>
@@ -42,6 +42,7 @@ export default {
   /* background-color:#3D4751; */
   background-color: white;
   /* color: #333; */
+  margin-top: 10px !important;
   color: #333;
   text-align: left;
   line-height: 200px;

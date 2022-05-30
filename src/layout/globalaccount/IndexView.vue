@@ -2,7 +2,7 @@
   <div class="hospital">
     <el-row style="float:left">
       <router-link to="/globalaccountadd" style="text-decoration: none; color: white">
-        <el-button type="primary" plain style="float: left; text-align: center;"
+        <el-button type="primary" class="btnglo1" :style="selfstyle" plain style="float: left; text-align: center;"
           >{{ $t("m.add") }}
         </el-button>
       </router-link>
@@ -17,7 +17,7 @@
 
       </el-table-column><el-table-column prop="admin" :label='$t("m.rolename")'  width="200">
           <template slot-scope="scope">
-            <el-tag>{{scope.row.role}}</el-tag>
+            <el-tag >{{scope.row.role}}</el-tag>
           </template>
       </el-table-column>
       <el-table-column prop="admin" :label='$t("m.username")'  width="200">
@@ -58,6 +58,7 @@
       layout="prev, pager, next"
       :total="1000"
       style="margin-top:20px;float:left"
+   
     >
     </el-pagination>
   </div>
@@ -67,6 +68,14 @@
 export default {
   data() {
     return {
+      selfstyle: {
+					color: "white",
+          width:'67px',
+          height:'40px',
+          backgroundColor: "#eb5350",
+          border:'none'
+        },
+      
       tableData: [
         {
           date: "1",
@@ -137,9 +146,24 @@ export default {
 };
 </script>
 
-<style>
+<style scopted>
 .personal { 
   width: 75%;
+}
+.btnglo1:hover{
+ color: white !important;
+  /* border:none !important; */
+  /* border:1px solid #999 !important; */
+  border:1px solid #f5a9a8 !important;
+
+  background-color: #f5a9a8 !important;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+
+  background-color: #eb5350 !important;
+}
+.el-pager li:hover{
+  color:#f5a9a8 !important;
 }
 /* .el-main{
     line-height: 0px;

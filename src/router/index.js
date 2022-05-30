@@ -21,9 +21,9 @@ const routes = [
         component: () => import("../layout/index/IndexView.vue")
       },
       {
-        path: 'personalinformation',
-        name: 'personalinformation',
-        meta: { title: "Personal Information" },
+        path: 'patientmanagement',
+        name: 'patientmanagement',
+        meta: { title: "Paatient Management" },
         component: () => import('@/layout/Personal/IndexView.vue')
       },
       {
@@ -35,7 +35,7 @@ const routes = [
       {
         path:'roleadd',
         name:'roleadd',
-        meta:{title:'RoleAdd'},
+        meta:{title:'Add Role'},
         component: () => import('@/layout/role/RoleAdd.vue')
       },
       {
@@ -47,7 +47,7 @@ const routes = [
       {
         path: 'addv1',
         name: 'addv1',
-        meta: { title: "Personal Add" },
+        meta: { title: "Add Patient" },
         component: () => import('@/layout/Personal/AddView1.vue')
 
       }
@@ -63,22 +63,32 @@ const routes = [
       {
         path: 'hospital',
         name: 'hospital',
-        meta: { title: "Hospital" },
+        meta: { title: "Hospital Management" },
         component: () => import('@/layout/hospital/IndexView.vue')
 
       }
       ,
+      
+        {
+          path: 'hospitaladd',
+          name: 'hospitaladd',
+          meta: { title: " Add Hospital" },
+          component: () => import('@/layout/Personal/MedicalHistory.vue')
+  
+        }
+      ,
+      
       {
         path: 'globalaccount',
         name: 'globalaccount',
-        meta: { title: "Global Account" },
+        meta: { title: "Account Management" },
         component: () => import('@/layout/globalaccount/IndexView.vue')
 
       },
       {
         path: 'globalaccountadd',
         name: 'globalaccountadd',
-        meta: { title: "Global Account Add" },
+        meta: { title: "Add Account" },
         component: () => import('@/layout/globalaccount/GlobalaccountAdd.vue')
       },
 
@@ -109,12 +119,12 @@ const routes = [
       {
         path: 'device',
         name: 'device',
-        meta: { title: "Device" },
+        meta: { title: "Device Management" },
         component: () => import('@/layout/device/IndexView.vue')
       }, {
         path: 'deviceadd',
         name: 'deviceadd',
-        meta: { title: "DeviceAdd" },
+        meta: { title: "Add Device" },
         component: () => import('@/layout/device/DeviceAdd.vue')
       },{
         path:'results',

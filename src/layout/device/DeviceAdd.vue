@@ -22,7 +22,7 @@
          
 
           <el-form-item>
-            <el-button type="primary" @click="submitForm('ruleForm')">{{ $t("m.submit") }}</el-button>
+            <el-button type="primary" :style="selfstyle" @click="submitForm('ruleForm')">{{ $t("m.determination") }}</el-button>
             <el-button @click="resetForm('ruleForm')">reset</el-button>
           </el-form-item>
         </el-form>
@@ -69,6 +69,13 @@ export default {
       }
     };
     return {
+      selfstyle: {
+					color: "white",
+					width:'129px',
+          height:'40px',
+          backgroundColor: "#eb5350",
+          border:'none'
+				},
       ruleForm: {
         pass: "",
         checkPass: "",

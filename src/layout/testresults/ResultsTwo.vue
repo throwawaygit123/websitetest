@@ -5,7 +5,7 @@
     </el-row>
     <el-row style="float:right;margin-bottom:15px;width:250">
       
-      <el-button type="primary" plain style="float:left; text-align: center;display:block;margin-left:5px">{{ $t("m.down") }}</el-button>
+      <el-button type="primary" plain style="float:left; text-align: center;display:block;margin-left:5px" class="btntest2" :style="selfstyle">{{ $t("m.down") }}</el-button>
     </el-row>
     <el-table :data="tableData" border style="width: 100%">
       <!-- v-for="(item,index) in tableData" :key="index" -->
@@ -141,6 +141,13 @@
 export default {
   data() {
     return {
+       selfstyle: {
+					color: "white",
+          width:'100px',
+          height:'40px',
+          backgroundColor: "#eb5350",
+          border:'none'
+				},
       // dd:'dcd0',
       tableData: [
         {
@@ -532,6 +539,14 @@ export default {
 <style>
 .personal {
   width: 75%;
+}
+btntest2{
+       color: white !important;
+  /* border:none !important; */
+  /* border:1px solid #999 !important; */
+  border:1px solid #f5a9a8 !important;
+
+  background-color: #f5a9a8 !important;
 }
 /* .el-main{
     line-height: 0px;

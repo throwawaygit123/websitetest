@@ -29,7 +29,7 @@
         <el-form-item>
 
           <router-link to="/index">
-            <el-button  class="btn" type="primary" @click="submitForm('ruleForm')"
+            <el-button  :style="selfstyle" class="btn" type="primary" @click="submitForm('ruleForm')"
             >{{ $t("m.submit") }}</el-button
           >
           </router-link>
@@ -55,6 +55,14 @@ export default {
       };
   
       return {
+         selfstyle: {
+					color: "white",
+          width:'167px',
+          height:'50px',
+          backgroundColor: "#eb5350",
+          border:'none'
+        },
+      
         ruleForm: {
           pass: '',
           checkPass: '',
@@ -131,7 +139,7 @@ h2 {
 }
 
 .one .btn {
-  width: 150px;
+  /* width: 150px; */
   height: 50px;
   /* margin: 10px 0 0 0px; */
   background-color: #3d4751;

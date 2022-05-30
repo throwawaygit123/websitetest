@@ -135,7 +135,7 @@
             </el-form-item>-->
 
             <el-form-item style="margin-top:20px;">
-              <el-button type="primary" @click="submitForm('form')">{{ $t("m.submit") }}</el-button>
+              <el-button type="primary" :style="selfstyle" @click="submitForm('form')">{{ $t("m.determination") }}</el-button>
               <el-button @click="resetForm('form')">reset</el-button>
             </el-form-item>
           </el-form>
@@ -157,6 +157,13 @@
 export default {
   data() {
     return {
+       selfstyle: {
+					color: "white",
+					width:'129px',
+          height:'40px',
+          backgroundColor: "#eb5350",
+          border:'none'
+				},
       state1: 1,
       form: {
         // state: 1,
@@ -227,6 +234,7 @@ export default {
   height: 30px;
   padding: 5px 5px;
   margin-left: 20px;
+  margin-bottom: 5px;
 }
 .p1-3 {
   /* width: 50%; */

@@ -105,4 +105,25 @@ export default {
   margin-top: -30px;
 
 }
+.btn-back{
+  color: #333 !important;
+  background-color: white !important;
+  border:1px solid #999 !important;
+
+}
+.btn-back:hover{
+  color: white !important;
+  /* border:none !important; */
+  /* border:1px solid #999 !important; */
+  border:1px solid #eb5350 !important;
+
+  background-color: #eb5350 !important;
+}
+.btn-back:click{
+  color: white !important;
+  /* border:none !important; */
+  border:1px solid #eb5350 !important;
+
+  background-color: #eb5350 !important;
+}
 </style>

@@ -12,12 +12,14 @@
             type="primary"
             plain
             :style="selfstyle"
+            class="btnindex"
             style="float:left; text-align: center;display:block; "
           >{{ $t("m.myaccount") }}</el-button>
         </router-link>
         <el-button
           type="primary"
           plain
+          class="btnindex"
           :style="selfstyle"
           style="float:left; text-align: center;display:block;margin-left:5px"
         >{{ $t("m.aboutus") }}</el-button>
@@ -107,7 +109,8 @@ export default {
     return {
       selfstyle: {
 					color: "white",
-					
+          width:'120px',
+          height:'40px',
           backgroundColor: "#eb5350",
           border:'none'
 				}
@@ -169,4 +172,12 @@ border-color: #0ABBF9 !important;
 background-color: #0ABBF9 !important;
 border-color: #0ABBF9 !important;
 } */
+.btnindex:hover{
+  color: white !important;
+  /* border:none !important; */
+  /* border:1px solid #999 !important; */
+  border:1px solid #f5a9a8 !important;
+
+  background-color: #f5a9a8 !important;
+}
 </style>

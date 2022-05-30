@@ -1,8 +1,8 @@
 <template>
   <div class="hospital">
     <el-row style="float:left">
-      <router-link to="/addv2" style="text-decoration: none; color: white">
-        <el-button type="primary" plain style="float: left; text-align: center;"
+      <router-link to="/hospitaladd" style="text-decoration: none; color: white">
+        <el-button type="primary" :style="selfstyle" class="btnhos1" plain style="float: left; text-align: center;"
           >{{ $t("m.add") }}
         </el-button>
       </router-link>
@@ -69,6 +69,13 @@
 export default {
   data() {
     return {
+      selfstyle: {
+					color: "white",
+          width:'67px',
+          height:'40px',
+          backgroundColor: "#eb5350",
+          border:'none'
+				},
       tableData: [
         {
           num:'77524258',
@@ -106,9 +113,24 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .personal { 
   width: 75%;
+}
+.btnhos1:hover{
+   color: white !important;
+  /* border:none !important; */
+  /* border:1px solid #999 !important; */
+  border:1px solid #f5a9a8 !important;
+
+  background-color: #f5a9a8 !important;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+
+  background-color: #eb5350 !important;
+}
+.el-pager li:hover{
+  color:#f5a9a8 !important;
 }
 /* .el-main{
     line-height: 0px;

@@ -65,7 +65,7 @@
           </el-form-item>
 
           <el-form-item>
-            <el-button type="primary" @click="submitForm('ruleForm')">{{ $t("m.submit") }}</el-button>
+            <el-button class="btnglo2" :style="selfstyle" type="primary" @click="submitForm('ruleForm')">{{ $t("m.determination") }}</el-button>
             <el-button @click="resetForm('ruleForm')">reset</el-button>
           </el-form-item>
         </el-form>
@@ -76,6 +76,7 @@
 <script>
 export default {
   data() {
+    
     var checkAge = (rule, value, callback) => {
       if (!value) {
         return callback(new Error("Name cannot be empty"));
@@ -112,6 +113,13 @@ export default {
       }
     };
     return {
+      selfstyle: {
+					color: "white",
+					width:'129px',
+          height:'40px',
+          backgroundColor: "#eb5350",
+          border:'none'
+				},
       ruleForm: {
         pass: "",
         checkPass: "",
@@ -145,3 +153,14 @@ export default {
   }
 };
 </script>
+
+<style  scoped>
+.btnglo2:hover{
+   color: white !important;
+  /* border:none !important; */
+  /* border:1px solid #999 !important; */
+  border:1px solid #f5a9a8 !important;
+
+  background-color: #f5a9a8 !important;
+}
+</style>

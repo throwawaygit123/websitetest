@@ -5,9 +5,9 @@
     </el-row>
     <el-row style="float:right;margin-bottom:15px;width:250">
       <router-link to="/historytest" style="text-decoration: none; color: white">
-        <el-button type="primary" plain style="float:left; text-align: center;display:block;">{{ $t("m.historytest") }}</el-button>
+        <el-button type="primary" plain style="float:left; text-align: center;display:block;" class="btntest1" :style="selfstyle">{{ $t("m.historytest") }}</el-button>
       </router-link>
-      <el-button type="primary" plain style="float:left; text-align: center;display:block;margin-left:5px">{{ $t("m.downall") }}</el-button>
+      <el-button type="primary" plain style="float:left; text-align: center;display:block;margin-left:5px" class="btntest1" :style="selfstyle">{{ $t("m.downall") }}</el-button>
     </el-row>
  
 
@@ -52,6 +52,13 @@
 export default {
   data() {
     return {
+       selfstyle: {
+					color: "white",
+          width:'130px',
+          height:'40px',
+          backgroundColor: "#eb5350",
+          border:'none'
+				},
       tableData: [
         {
           date: "2021-10-5 11:00(am)",
@@ -99,9 +106,17 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .personal {
   width: 75%;
+}
+.btntest1:hover{
+     color: white !important;
+  /* border:none !important; */
+  /* border:1px solid #999 !important; */
+  border:1px solid #f5a9a8 !important;
+
+  background-color: #f5a9a8 !important;
 }
 /* .el-main{
     line-height: 0px;

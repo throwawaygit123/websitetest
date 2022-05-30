@@ -97,7 +97,7 @@
             </el-menu-item>
           </router-link>
           
-           <router-link to="/personalinformation">
+           <router-link to="/patientmanagement">
             <el-menu-item index="5">
               <i class="el-icon-s-custom" style="color: #333"></i>
               <span slot="title" style="font-size: 17px">
@@ -167,5 +167,8 @@ a {
     width: 200px;
     min-height: 400px;
   } */
+.el-menu-item:hover{
+  background-color: #f5a9a8 !important;
+}
 </style>
 

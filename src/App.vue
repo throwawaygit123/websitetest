@@ -17,6 +17,7 @@ body{
   color: #2c3e50;
   padding: 0 !important;
   margin: 0 !important;
+  /* overflow: hidden; */
 }
 
 nav {
@@ -34,7 +35,15 @@ nav a.router-link-exact-active {
 .el-table .cell{
   text-align: center !important;
 }
+.el-select .el-input__inner:focus{
+  border:1px solid #eb5350 !important;
+}
+.el-input__inner:focus{
+  border:1px solid #eb5350 !important;
 
-
+}
+.el-select-dropdown__item{
+  color:#eb5350 ;
+}
 
 </style>

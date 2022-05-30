@@ -36,7 +36,7 @@
 
       <el-form-item>
         <router-link to="./role">
-          <el-button type="primary" @click="submitForm('ruleForm')" :style="selfstyle">
+          <el-button type="primary" @click="submitForm('ruleForm')" class="btnrole2" :style="selfstyle">
             {{
             $t("m.determination")
             }}
@@ -55,7 +55,8 @@ export default {
     return {
       selfstyle: {
 					color: "white",
-					
+					width:'129px',
+          height:'40px',
           backgroundColor: "#eb5350",
           border:'none'
 				},
@@ -137,6 +138,14 @@ export default {
 <style>
 .roleadd {
   width: 50%;
+}
+.btnrole2:hover{
+   color: white !important;
+  /* border:none !important; */
+  /* border:1px solid #999 !important; */
+  border:1px solid #f5a9a8 !important;
+
+  background-color: #f5a9a8 !important;
 }
 
 </style>

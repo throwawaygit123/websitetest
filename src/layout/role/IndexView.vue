@@ -2,7 +2,7 @@
   <div class="role">
     <el-row style="float:left">
       <router-link to="/roleadd" style="text-decoration: none; color: white">
-        <el-button type="primary" :style="selfstyle" plain style="float: left; text-align: center;">{{ $t("m.add") }}</el-button>
+        <el-button type="primary" class="btnrole1" :style="selfstyle" plain style="float: left; text-align: center;">{{ $t("m.add") }}</el-button>
       </router-link>
     </el-row>
     <el-input
@@ -55,7 +55,8 @@ export default {
     return {
        selfstyle: {
 					color: "white",
-					
+          width:'67px',
+          height:'40px',
           backgroundColor: "#eb5350",
           border:'none'
 				},
@@ -114,6 +115,16 @@ export default {
 <style>
 .role {
   width: 100%;
+  /* background-color: white; */
+  /* padding: 5px 5px ; */
+}
+.btnrole1:hover{
+ color: white !important;
+  /* border:none !important; */
+  /* border:1px solid #999 !important; */
+  border:1px solid #f5a9a8 !important;
+
+  background-color: #f5a9a8 !important;
 }
 /* .el-main {
   line-height: 10px;
@@ -130,4 +141,5 @@ export default {
 .el-button--success {
   background-color: #14a17e;
 } */
+
 </style>
