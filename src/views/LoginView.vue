@@ -87,17 +87,21 @@ export default {
   height: 100vh;
   background: radial-gradient(
     200% 100% at bottom center,
-    #999,
-    #3d4751,
-    #1b2947,
-    #1b1b1b
+    #eb5350,
+
+    #f5a9a8,
+    #f5a9a8,
+    /* #eb5350, */
+    #eb5350
   );
   background: radial-gradient(
     220% 105% at top center,
-    #999,
-    #3d4751,
-    #1b2947,
-    #1b1b1b
+    #eb5350,
+
+    #f5a9a8,
+    #f5a9a8,
+    /* #eb5350, */
+    #eb5350
   );
   background-attachment: fixed;
   overflow: hidden;
@@ -142,7 +146,7 @@ h2 {
   /* width: 150px; */
   height: 50px;
   /* margin: 10px 0 0 0px; */
-  background-color: #3d4751;
+  /* background-color: #3d4751; */
   border-radius: 15px;
   border: none;
   color: white;

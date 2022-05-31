@@ -3,7 +3,7 @@
     <el-row style="float:left">
       <router-link to="/deviceadd" style="text-decoration: none; color: white">
         <el-button :style="selfstyle" class="btndev" type="primary" plain style="float: left; text-align: center;"
-          >{{ $t("m.add") }}
+          >{{ $t("m.add") }} Device
         </el-button>
       </router-link>
     </el-row>
@@ -62,7 +62,7 @@ export default {
     return {
       selfstyle: {
 					color: "white",
-          width:'67px',
+          width:'120px',
           height:'40px',
           backgroundColor: "#eb5350",
           border:'none'

@@ -2,7 +2,7 @@
   <div class="personal">
     <el-row style="float:left">
       <router-link to="/addv1" style="text-decoration: none; color: white">
-        <el-button type="primary" :style="selfstyle" class="btnper1" plain style="float: left; text-align: center;">{{ $t("m.add") }}</el-button>
+        <el-button type="primary" :style="selfstyle" class="btnper1" plain style="float: left; text-align: center;">{{ $t("m.add") }} Patient</el-button>
       </router-link>
     </el-row>
     <el-input
@@ -88,7 +88,7 @@ export default {
     return {
       selfstyle: {
 					color: "white",
-          width:'67px',
+          width:'120px',
           height:'40px',
           backgroundColor: "#eb5350",
           border:'none'

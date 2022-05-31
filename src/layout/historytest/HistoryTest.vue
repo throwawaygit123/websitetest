@@ -680,8 +680,8 @@ export default {
       option = {
         title: {
           text: "SPO2",
-          left: "center",
-          top: "bottom"
+          left: "left",
+          top: "top"
         },
         tooltip: {
           trigger: "axis"

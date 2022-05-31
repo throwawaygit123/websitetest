@@ -3,7 +3,7 @@
     <el-row style="float:left">
       <router-link to="/globalaccountadd" style="text-decoration: none; color: white">
         <el-button type="primary" class="btnglo1" :style="selfstyle" plain style="float: left; text-align: center;"
-          >{{ $t("m.add") }}
+          >{{ $t("m.add") }} Account
         </el-button>
       </router-link>
     </el-row>
@@ -70,7 +70,7 @@ export default {
     return {
       selfstyle: {
 					color: "white",
-          width:'67px',
+          width:'120px',
           height:'40px',
           backgroundColor: "#eb5350",
           border:'none'

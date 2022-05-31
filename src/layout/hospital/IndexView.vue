@@ -3,7 +3,7 @@
     <el-row style="float:left">
       <router-link to="/hospitaladd" style="text-decoration: none; color: white">
         <el-button type="primary" :style="selfstyle" class="btnhos1" plain style="float: left; text-align: center;"
-          >{{ $t("m.add") }}
+          >{{ $t("m.add") }} Hospital
         </el-button>
       </router-link>
     </el-row>
@@ -71,7 +71,7 @@ export default {
     return {
       selfstyle: {
 					color: "white",
-          width:'67px',
+          width:'120px',
           height:'40px',
           backgroundColor: "#eb5350",
           border:'none'

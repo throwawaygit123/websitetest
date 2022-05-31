@@ -23,7 +23,7 @@ const routes = [
       {
         path: 'patientmanagement',
         name: 'patientmanagement',
-        meta: { title: "Paatient Management" },
+        meta: { title: "Patient Management" },
         component: () => import('@/layout/Personal/IndexView.vue')
       },
       {

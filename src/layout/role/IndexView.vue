@@ -2,7 +2,7 @@
   <div class="role">
     <el-row style="float:left">
       <router-link to="/roleadd" style="text-decoration: none; color: white">
-        <el-button type="primary" class="btnrole1" :style="selfstyle" plain style="float: left; text-align: center;">{{ $t("m.add") }}</el-button>
+        <el-button type="primary" class="btnrole1" :style="selfstyle" plain style="float: left; text-align: center;">{{ $t("m.add") }} Role</el-button>
       </router-link>
     </el-row>
     <el-input
@@ -55,7 +55,7 @@ export default {
     return {
        selfstyle: {
 					color: "white",
-          width:'67px',
+          width:'94px',
           height:'40px',
           backgroundColor: "#eb5350",
           border:'none'
