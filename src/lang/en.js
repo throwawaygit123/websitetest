@@ -151,7 +151,8 @@ export const m = {
     doctorid:'Doctor ID',
     morning:'Good Morning ',
     payment:'Payment',
-    subscription:'Subscription'
+    subscription:'Subscription',
+    linechart:'Line chart'
 
 
 }

@@ -85,26 +85,13 @@ export default {
 .box {
   width: 100%;
   height: 100vh;
-  background: radial-gradient(
-    200% 100% at bottom center,
-    #eb5350,
-
-    #f5a9a8,
-    #f5a9a8,
-    /* #eb5350, */
-    #eb5350
-  );
-  background: radial-gradient(
-    220% 105% at top center,
-    #eb5350,
-
-    #f5a9a8,
-    #f5a9a8,
-    /* #eb5350, */
-    #eb5350
-  );
+  background-image: url(../assets/index.png) ;
+  background-size: 100% 100% !important;
   background-attachment: fixed;
-  overflow: hidden;
+  overflow: hidden !important;
+  /* margin: 0 !important;
+  padding: 0 !important; */
+  /* overflow-y: hidden !important; */
 }
 
 @keyframes rotate {
@@ -132,7 +119,7 @@ a {
   width: 400px;
   height: 200px;
   background-color: white;
-  margin: 150px auto;
+  margin: 200px auto;
   opacity: 0.9;
   padding-top: 30px;
   border-radius: 15px;
@@ -143,10 +130,7 @@ h2 {
 }
 
 .one .btn {
-  /* width: 150px; */
   height: 50px;
-  /* margin: 10px 0 0 0px; */
-  /* background-color: #3d4751; */
   border-radius: 15px;
   border: none;
   color: white;

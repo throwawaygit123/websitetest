@@ -13,7 +13,8 @@ const i18n = new VueI18n({
   messages:{
     'zh-CN':require('./lang/zh'),
     'en-US':require('./lang/en')
-  }
+  },
+  silentTranslationWarn: true
 })
 
 Vue.config.productionTip = false

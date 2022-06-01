@@ -45,5 +45,9 @@ nav a.router-link-exact-active {
 .el-select-dropdown__item{
   color:#eb5350 ;
 }
+::-webkit-scrollbar{
 
+    display:none !important; 
+
+}
 </style>

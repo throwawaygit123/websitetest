@@ -154,7 +154,8 @@ export const m = {
     doctorid:'医生ID',
     morning:'早上好',
     payment:'支付',
-    subscription:'订阅'
+    subscription:'订阅',
+    linechart:'Line chart'
 
 
 
