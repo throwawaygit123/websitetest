@@ -152,7 +152,9 @@ export const m = {
     morning:'Good Morning ',
     payment:'Payment',
     subscription:'Subscription',
-    linechart:'Line chart'
+    linechart:'Line chart',
+    Pemailadd:'Please enter email address',
+    switchcharts:'Switch charts'
 
 
 }

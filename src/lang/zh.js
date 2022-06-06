@@ -155,7 +155,9 @@ export const m = {
     morning:'早上好',
     payment:'支付',
     subscription:'订阅',
-    linechart:'Line chart'
+    linechart:'Line chart',
+    Pemailadd:'请输入邮箱地址',
+    switchcharts:'切换图表'
 
 
 
