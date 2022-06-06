@@ -91,7 +91,7 @@ export default {
           //   console.log('问题'+ err)
           // })
           // Login(this.ruleForm)
-          if (this.ruleForm.email == "quanbio@123.com" && this.ruleForm.pass == "123456") {
+          if (this.ruleForm.email == "user@quanbio.com" && this.ruleForm.pass == "123456") {
             console.log("ok");
             this.$router.push({path:'/index'})
           } else {
