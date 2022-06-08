@@ -19,7 +19,7 @@ const i18n = new VueI18n({
 })
 
 // const $axios = axios.create({
-//   ,
+  
 //   timeout: 5000
 // });
 
@@ -29,5 +29,6 @@ new Vue({
   router,
   store,
   i18n,
+  // axios,
   render: h => h(App)
 }).$mount('#app')

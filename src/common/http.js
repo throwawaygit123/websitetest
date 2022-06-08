@@ -10,7 +10,7 @@ if (process.env.NODE_ENV == "development") {    //开发环境
     baseURL = bro_baseURL
 }
 
-//创建axios实例
+创建axios实例
 const $axios = axios.create({
     baseURL,
     timeout: 5000

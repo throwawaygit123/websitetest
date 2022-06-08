@@ -1,6 +1,7 @@
 <template>
   <div class="qus">
-    <p>Subscription depends on:</p>
+    
+    <!-- <p>Subscription depends on:</p>
     <p>- number of patients ?</p>
     <p>- number of doctors ?</p>
     <p>- duration</p>
@@ -16,8 +17,8 @@
     <p>- will send invoice to customers ?</p>
     <p>Does it have a trial time ?</p>
     <p>What are the different possible plans ?</p>
-    <p>What are the payment methods? Is it Per month or year ?</p>
-
+    <p>What are the payment methods? Is it Per month or year ?</p> -->
+  
   </div>
 </template>
 

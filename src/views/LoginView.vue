@@ -4,16 +4,11 @@
       <el-form
         :model="ruleForm"
         status-icon
- 
         ref="ruleForm"
         label-width="120px"
         class="demo-ruleForm"
       >
-        <el-form-item
-          prop="email"
-          :label="$t('m.email')"
-          
-        >
+        <el-form-item prop="email" :label="$t('m.email')">
           <el-input v-model="ruleForm.email"></el-input>
         </el-form-item>
         <!-- <el-form-item
@@ -24,9 +19,7 @@
         >
           <el-input type="email" v-model="ruleForm.emali"></el-input>
         </el-form-item>-->
-        <el-form-item :label="$t('m.password')" prop="pass"
-        
-        >
+        <el-form-item :label="$t('m.password')" prop="pass">
           <el-input type="password" v-model="ruleForm.pass" autocomplete="off"></el-input>
         </el-form-item>
 
@@ -46,12 +39,10 @@
 </template>
 
 <script>
-// import axios from 'axios'
+import axios from "axios";
 // import {Login} from  '@/request/login'
 export default {
   data() {
-
-
     return {
       selfstyle: {
         color: "white",
@@ -66,7 +57,7 @@ export default {
         pass: ""
         // checkPass: "",
         // age: ""
-      },
+      }
       // rules: {
       //   pass: [
       //     { min: 5, max: 9, message: "长度在 3 到 5 个字符", trigger: "blur" }
@@ -78,28 +69,37 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate(valid => {
         if (valid) {
-          // let _this =this ;
- 
-          // axios.post('http://192.168.3.15:9191/api/userlogin/login',
-          // {
-          //     email:this.ruleForm.emain,
-          //     password:this.ruleForm.pass
-            
-          // }).then(res=>{
-          //   console.log(res)
-          // }).catch(err=>{
-          //   console.log('问题'+ err)
-          // })
+          let _this = this;
+          console.log(_this.ruleForm.email, _this.ruleForm.pass);
+          
+            // .post("http://52.3.194.83:9191/api/userlogin/login", {
+            axios.post("http://192.168.3.15:9191/api/userlogin/login", {
+              email: _this.ruleForm.email,
+              password: _this.ruleForm.pass
+            })
+            .then(res => {
+              console.log(res.status);
+              if(res.status==200){
+                _this.$router.push({path:'/index'})
+              }else{
+                alert('Login failed')
+              }
+            })
+            .catch(err => {
+              alert('Login failed')
+              console.log("问题" + err);
+            });
+
           // Login(this.ruleForm)
-          if (this.ruleForm.email == "user@quanbio.com" && this.ruleForm.pass == "123456") {
-            console.log("ok");
-            this.$router.push({path:'/index'})
-          } else {
-            console.log(111)
-            alert('Incorrect account password')
-            // return;
-          }
-          console.log(this.ruleForm.email, this.ruleForm.pass);
+          // if (this.ruleForm.email == "user@quanbio.com" && this.ruleForm.pass == "123456") {
+          //   console.log("ok");
+          //   this.$router.push({path:'/index'})
+          // } else {
+          //   console.log(111)
+          //   alert('Incorrect account password')
+          //   // return;
+          // }
+          // console.log(this.ruleForm.email, this.ruleForm.pass);
         } else {
           console.log("error submit!!");
           return false;
@@ -114,10 +114,11 @@ export default {
 //               { type: 'email',message: 'Please enter the correct email address', trigger: ['blur', 'change'] }
 //             ]"
 
-  // :rules="[
-  //             { required: true, message: 'Please input a password', trigger: 'blur' },
-  //             { min: 5, max: 9,  message: '5 to 9 characters in length', trigger: ['blur', 'change'] }
-  //           ]"
+// :rules="[
+//             { required: true, message: 'Please input a password', trigger: 'blur' },
+//             { min: 5, max: 9,  message: '5 to 9 characters in length', trigger: ['blur', 'change'] }
+//           ]"
+
 </script>
 
 <style  scoped>
