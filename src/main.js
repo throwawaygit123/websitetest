@@ -17,6 +17,18 @@ const i18n = new VueI18n({
   },
   silentTranslationWarn: true
 })
+// router.beforeEach((to,from,next)=>{
+//   if(to.meta.requireAuth){
+//     if(localStorage.email){
+//       next()
+//     }else{
+//       next({
+//         path:'/',
+//         // query:{redirect:to.fullPath}
+//       })
+//     }
+//   }
+// })
 
 // const $axios = axios.create({
   

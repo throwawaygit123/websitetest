@@ -70,15 +70,15 @@ export default {
       this.$refs[formName].validate(valid => {
         if (valid) {
           let _this = this;
-          console.log(_this.ruleForm.email, _this.ruleForm.pass);
+          // console.log(_this.ruleForm.email, _this.ruleForm.pass);
           
             // .post("http://52.3.194.83:9191/api/userlogin/login", {
-            axios.post("http://192.168.3.15:9191/api/userlogin/login", {
+            axios.post("http://52.3.194.83:9191/api/userlogin/login", {
               email: _this.ruleForm.email,
               password: _this.ruleForm.pass
             })
             .then(res => {
-              console.log(res.status);
+              console.log(res);
               if(res.status==200){
                 _this.$router.push({path:'/index'})
               }else{
