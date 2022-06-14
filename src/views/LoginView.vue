@@ -85,6 +85,8 @@ export default {
                 alert('Login failed')
               }
             })
+            // 1750 58
+            // 1166 38
             .catch(err => {
               alert('Login failed')
               console.log("问题" + err);

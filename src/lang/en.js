@@ -154,7 +154,8 @@ export const m = {
     subscription:'Subscription',
     linechart:'Line chart',
     Pemailadd:'Please enter email address',
-    switchcharts:'Switch charts'
+    switchcharts:'Switch charts',
+    Switchingnumber:'Switching number'
 
 
 }

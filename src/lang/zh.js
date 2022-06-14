@@ -157,7 +157,8 @@ export const m = {
     subscription:'订阅',
     linechart:'Line chart',
     Pemailadd:'请输入邮箱地址',
-    switchcharts:'切换图表'
+    switchcharts:'切换图表',
+    Switchingnumber:'切换人数'
 
 
 
