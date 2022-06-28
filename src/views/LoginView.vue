@@ -11,14 +11,8 @@
         <el-form-item prop="email" :label="$t('m.email')">
           <el-input v-model="ruleForm.email"></el-input>
         </el-form-item>
-        <!-- <el-form-item
-          :label="$t('m.email')"
-          prop="email"
-          :rules="[ { required: true, message: '请输入邮箱地址', trigger: 'blur' },
-                  { type: 'email', message: '请输入正确的邮箱地址', trigger: ['blur', 'change'] }]"
-        >
-          <el-input type="email" v-model="ruleForm.emali"></el-input>
-        </el-form-item>-->
+        
+
         <el-form-item :label="$t('m.password')" prop="pass">
           <el-input type="password" v-model="ruleForm.pass" autocomplete="off"></el-input>
         </el-form-item>
@@ -41,6 +35,7 @@
 <script>
 import axios from "axios";
 // import {Login} from  '@/request/login'
+// import {mapMutations} from 'vuex'
 export default {
   data() {
     return {
@@ -55,31 +50,30 @@ export default {
       ruleForm: {
         email: "",
         pass: ""
-        // checkPass: "",
-        // age: ""
+       
       }
-      // rules: {
-      //   pass: [
-      //     { min: 5, max: 9, message: "长度在 3 到 5 个字符", trigger: "blur" }
-      //   ]
-      // }
+    
     };
   },
   methods: {
+    // ...mapMutations(['changeLogin']),
     submitForm(formName) {
       this.$refs[formName].validate(valid => {
         if (valid) {
           let _this = this;
-          // console.log(_this.ruleForm.email, _this.ruleForm.pass);
-          
-            // .post("http://52.3.194.83:9191/api/userlogin/login", {
-            axios.post("http://52.3.194.83:9191/api/userlogin/login", {
+     
+            axios.post("http://52.3.194.83:9192/api/userlogin/user", {
               email: _this.ruleForm.email,
               password: _this.ruleForm.pass
             })
             .then(res => {
-              console.log(res);
-              if(res.status==200){
+              console.log(res.data);
+              if(res.data.state){
+              sessionStorage.setItem("token", JSON.stringify(res.data.token))
+              console.log(_this.$store)
+               _this.$store.commit('set_list', res.data)
+
+               _this.$store.commit('set_token', res.data.token)
                 _this.$router.push({path:'/index'})
               }else{
                 alert('Login failed')
@@ -92,16 +86,16 @@ export default {
               console.log("问题" + err);
             });
 
-          // Login(this.ruleForm)
-          // if (this.ruleForm.email == "user@quanbio.com" && this.ruleForm.pass == "123456") {
-          //   console.log("ok");
-          //   this.$router.push({path:'/index'})
-          // } else {
-          //   console.log(111)
-          //   alert('Incorrect account password')
-          //   // return;
-          // }
-          // console.log(this.ruleForm.email, this.ruleForm.pass);
+
+
+          // console.log(this.ruleForm)
+          //  Login(
+          //    {
+          //     email: _this.ruleForm.email,
+          //     password: _this.ruleForm.pass
+          //   }
+          // )
+
         } else {
           console.log("error submit!!");
           return false;

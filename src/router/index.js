@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+// import state from '../store'
 
 Vue.use(VueRouter)
 
@@ -12,7 +13,7 @@ const routes = [
     children: [
       {
         path: '/',
-        redirect: '/login'
+        redirect: '/index'
       },
       {
         path: '/index',
@@ -240,6 +241,17 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to,from,next)=>{
+ if(to.path == '/login'){
+   next()
+ }else{
+   let token =sessionStorage.getItem('token')
+   console.log(token)
+   if(token===null||token===""){
+     next('/login')
+   }else{
+     next()
+   }
+ }
   document.title="QuanBio";
   next()
 })
