@@ -1,6 +1,6 @@
 import ax from "axios"
 import {$Message} from "./untils"
-//  import store from "@/store"
+ import store from "@/store"
 import router from "../router";
 
 let baseURL = '';
@@ -24,9 +24,9 @@ const axios =ax.create({
 axios.interceptors.request.use(function (config) {
     // 在发送请求之前做些什么
     //权限的管理   token的设置  头信息的设置
-    config.headers.authorization=store.state.token
+    config.headers.authorization=store.getters.token
   
-  
+  console.log(store.getters.token)
     return config;
 }, function (error) {
     // 对请求错误做些什么

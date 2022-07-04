@@ -792,6 +792,7 @@ export default {
       }
     };
   },
+  
   methods: {
     hov1() {
       this.hov2 = true;

@@ -34,6 +34,8 @@
 
 <script>
 import axios from "axios";
+import { $Message } from "../common/untils";
+
 // import {Login} from  '@/request/login'
 // import {mapMutations} from 'vuex'
 export default {
@@ -66,21 +68,27 @@ export default {
               email: _this.ruleForm.email,
               password: _this.ruleForm.pass
             })
+    // $Message(res.state ? "success" : "error", res.msg, 3000)
             .then(res => {
-              console.log(res.data);
+              console.log(res.data.token,'token');
               if(res.data.state){
-              sessionStorage.setItem("token", JSON.stringify(res.data.token))
-              console.log(_this.$store)
-               _this.$store.commit('set_list', res.data)
+                console.log(111);
+                
+              // localStorage.setItem("token", JSON.stringify(res.data.token))
+              // console.log(_this.$store)
+              //  _this.$store.commit('set_list', res.data)
 
                _this.$store.commit('set_token', res.data.token)
-                _this.$router.push({path:'/index'})
+                this.$router.push({path:'/index'})
+                $Message("success" , 'Login successful', 3000)
               }else{
-                alert('Login failed')
+                // alert('Login failed')
+                $Message("error" , 'Login failed', 3000)
+
               }
             })
             // 1750 58
-            // 1166 38
+            // 1166 38x
             .catch(err => {
               alert('Login failed')
               console.log("问题" + err);

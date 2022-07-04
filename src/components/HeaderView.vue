@@ -35,11 +35,13 @@
           <i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <el-dropdown-menu slot="dropdown" style=" width:200px">
-           <router-link to="/login" style="text-decoration: none">
-              <el-dropdown-item icon="el-icon-user"
+           <!-- <router-link to="/login" style="text-decoration: none" @click="loginout()"> -->
+           <!-- <template @click="fn3"> -->
+              <el-dropdown-item icon="el-icon-user"   @click.native="fn3"
                 >{{$t('m.switchaccount')}}</el-dropdown-item
               >
-            </router-link>
+              <!-- </template> -->
+            <!-- </router-link> -->
           <router-link to="/index" style="text-decoration: none">
               <el-dropdown-item icon="el-icon-switch-button"
                 >{{$t('m.exitlogin')}}</el-dropdown-item
@@ -52,6 +54,8 @@
 </template>
 
 <script>
+import { $Message } from "../common/untils";
+
 export default {
   data() {
     return {
@@ -63,12 +67,23 @@ export default {
       console.log(111);
       this.$i18n.locale = "en-US";
       this.st = 2;
-      // console.log(this.$i18n)
     },
     fn2() {
       console.log(222);
       this.$i18n.locale = "zh-CN";
       this.st = 1;
+    },
+    fn3(){
+       this.$confirm('This action will log off the login, Continue?', 'Tips', {
+                confirmButtonText: 'determine',
+                cancelButtonText: 'cancel',
+                type: 'warning'
+            }).then(() => {
+                sessionStorage.removeItem("token")
+                this.$router.push('/login')
+            }).catch(() => {
+                 $Message("error" , ' Logoff failed', 3000)
+            });
     }
   }
 };
@@ -96,34 +111,26 @@ export default {
 }
 .h2-2 img {
   max-width: 16px;
-
 }
-.el-dropdown-menu{
-
+.el-dropdown-menu{ 
   position: static;
-
   margin-top: -30px;
-
 }
-.btn-back{
+.btn-back{ 
   color: #333 !important;
   background-color: white !important;
   border:1px solid #999 !important;
-
 }
 .btn-back:hover{
   color: white !important;
-  /* border:none !important; */
-  /* border:1px solid #999 !important; */
   border:1px solid #eb5350 !important;
-
   background-color: #eb5350 !important;
 }
 .btn-back:click{
   color: white !important;
-  /* border:none !important; */
   border:1px solid #eb5350 !important;
-
   background-color: #eb5350 !important;
 }
 </style>
+
+

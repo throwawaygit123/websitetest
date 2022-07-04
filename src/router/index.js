@@ -239,13 +239,14 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
-
+import store from "../store"
 router.beforeEach((to,from,next)=>{
  if(to.path == '/login'){
    next()
  }else{
-   let token =sessionStorage.getItem('token')
-   console.log(token)
+   let token =localStorage.getItem('token')
+   console.log(store.getters.token,'222');
+   
    if(token===null||token===""){
      next('/login')
    }else{
