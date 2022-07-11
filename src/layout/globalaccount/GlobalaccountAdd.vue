@@ -1,5 +1,6 @@
 
 <template>
+<!-- 全局账号添加  Add global account-->
   <div>
     <el-row>
       <el-col :xs="24" :sm="24" :md="24" :lg="17" :xl="17" style="background: white">

@@ -1,4 +1,6 @@
+
 <template>
+<!-- 测试结果  test result-->
   <div class="result">
     <el-row style="float:left;width:500px">
       <p style="float:left;display:inline-block;width:200px;line-height:normal;font-weight:700;">Cora</p>
@@ -13,10 +15,9 @@
 
     <el-table :data="tableData" border style="width: 100%;">
       <el-table-column prop="date" :label="$t('m.date')" width="350"></el-table-column>
-      <!-- <el-table-column prop="name" label="Role(角色)" width="200"> </el-table-column> -->
-      <!-- <el-table-column prop="name" :label="$t('m.patientidname')" width="300"></el-table-column> -->
+ 
       <el-table-column prop="name" :label="$t('m.results')" width="350">
-        <router-link to="resultw">
+        <router-link to="testdetails">
           <template>
             <el-tag type="success">{{ $t("m.viewdetails") }}</el-tag>
           </template>
@@ -25,11 +26,6 @@
 
       <el-table-column prop="address" :label="$t('m.operation')" >
         <template slot-scope="scope">
-          <!-- <el-button
-            size="mini"
-            type="success"
-            @click="handleEdit(scope.$index, scope.row)"
-          >{{ $t("m.examine") }}</el-button> -->
           <el-button
             size="mini"
             type="danger"
@@ -112,16 +108,10 @@ export default {
 }
 .btntest1:hover{
      color: white !important;
-  /* border:none !important; */
-  /* border:1px solid #999 !important; */
+
   border:1px solid #f5a9a8 !important;
 
   background-color: #f5a9a8 !important;
 }
-/* .el-main{
-    line-height: 0px;
-}
-.el-pagination.is-background .el-pager li:not(.disabled).active{
-  background-color: #14a17e;
-} */
+
 </style>

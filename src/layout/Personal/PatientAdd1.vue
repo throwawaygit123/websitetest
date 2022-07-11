@@ -1,11 +1,10 @@
 <template>
+<!-- 添加病人 Add patient -->
   <div>
     <el-row>
       <el-col :xs="24" :sm="24" :md="24" :lg="17" :xl="17" style="background: white">
         <div class="grid-content p1-1">
-          <!-- <p style="font-size: 14px; margin: 15px 0; display: inline-block">
-            {{ $t("m.personalinformation") }}
-          </p>-->
+    
 
           <el-form ref="form" :model="form" label-width="150px">
             <el-form-item :label="$t('m.familyname')">

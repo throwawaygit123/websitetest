@@ -1,4 +1,6 @@
 <template>
+<!-- 医院管理 hospital management-->
+
   <div class="hospital">
     <el-row style="float:left">
       <router-link to="/hospitaladd" style="text-decoration: none; color: white">
@@ -25,7 +27,7 @@
         
       </el-table-column>
        <el-table-column prop="payment" :label="$t('m.subscription')" width="200">
-        <router-link to="addv2">
+        <router-link to="subscription">
           <template>
             <el-tag type="success">{{ $t("m.clicktoview") }}</el-tag>
           </template>

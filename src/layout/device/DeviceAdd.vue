@@ -1,5 +1,6 @@
 
 <template>
+<!-- 设备添加 Device addition -->
   <div>
     <el-row>
       <el-col :xs="24" :sm="24" :md="24" :lg="17" :xl="17" style="background: white">

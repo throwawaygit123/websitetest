@@ -1,4 +1,5 @@
 <template>
+<!-- 医院添加  Hospital addition-->
   <div class="ad2" >
   
 

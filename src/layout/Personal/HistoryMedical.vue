@@ -1,4 +1,5 @@
 <template>
+<!-- 病人历史病例 Patient history-->
   <div style="background-color:white;">
     <el-form>
       <div class="medhy">

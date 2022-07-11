@@ -15,222 +15,130 @@ const routes = [
         path: '/',
         redirect: '/index'
       },
+      // 首页 home page
       {
         path: '/index',
         name: 'index',
-        // meta:{title:'首页'},
         component: () => import("../layout/index/IndexView.vue")
       },
+      // 角色 role management
       {
-        path: 'patientmanagement',
-        name: 'patientmanagement',
-        meta: { title: "Patient Management" },
-        component: () => import('@/layout/Personal/IndexView.vue')
-      },
-      {
-        path:'role',
-        name:'role',
-        meta:{title:'Role Management'},
+        path: 'role',
+        name: 'role',
+        meta: { title: 'Role Management' },
         component: () => import('@/layout/role/IndexView.vue')
       },
+      // 添加角色 role add
       {
-        path:'roleadd',
-        name:'roleadd',
-        meta:{title:'Add Role'},
+        path: 'roleadd',
+        name: 'roleadd',
+        meta: { title: 'Add Role' },
         component: () => import('@/layout/role/RoleAdd.vue')
-      },
-      {
-        path: 'historymedical',
-        name: 'historymedical',
-        meta: { title: "History Medical" },
-        component: () => import('@/layout/Personal/AddView3.vue')
-      },
-      {
-        path: 'addv1',
-        name: 'addv1',
-        meta: { title: "Add Patient" },
-        component: () => import('@/layout/Personal/AddView1.vue')
-
-      }
-      ,
-      {
-        path: 'addv2',
-        name: 'addv2',
-        meta: { title: "Hospital Subscription" },
-        component: () => import('@/layout/Personal/AddView2.vue')
-
-      }
-      ,
-      {
-        path: 'hospital',
-        name: 'hospital',
-        meta: { title: "Hospital Management" },
-        component: () => import('@/layout/hospital/IndexView.vue')
-
-      }
-      ,
-      
-        {
-          path: 'hospitaladd',
-          name: 'hospitaladd',
-          meta: { title: " Add Hospital" },
-          component: () => import('@/layout/Personal/MedicalHistory.vue')
-  
-        }
-      ,
-      
+      }, 
+      // 全局账户管理 global account mangement
       {
         path: 'globalaccount',
         name: 'globalaccount',
         meta: { title: "Account Management" },
         component: () => import('@/layout/globalaccount/IndexView.vue')
-
       },
+      // 全局账户添加 add account
       {
         path: 'globalaccountadd',
         name: 'globalaccountadd',
         meta: { title: "Add Account" },
         component: () => import('@/layout/globalaccount/GlobalaccountAdd.vue')
       },
-
+      // 医院管理 hospital management
       {
-        path: 'hospitalaccount',
-        name: 'hospitalaccount',
-        meta: { title: "Hospital Account" },
-        component: () => import('@/layout/hospitalaccount/IndexView.vue')
+        path: 'hospital',
+        name: 'hospital',
+        meta: { title: "Hospital Management" },
+        component: () => import('@/layout/hospital/IndexView.vue')
       },
+      // 医院添加 hospital add
       {
-        path: 'hospitalaccountadd',
-        name: 'hospitalaccountadd',
-        meta: { title: "Hospital Account Add" },
-        component: () => import('@/layout/hospitalaccount/HospitalaccountAdd.vue')
+        path: 'hospitaladd',
+        name: 'hospitaladd',
+        meta: { title: " Add Hospital" },
+        component: () => import('@/layout/hospital/HospitalAdd.vue')
       },
+      // 医院订阅 subscription
       {
-        path: 'doctoraccount',
-        name: 'doctoraccount',
-        meta: { title: "Doctor Account" },
-        component: () => import('@/layout/doctoraccount/IndexView.vue')
+        path: 'subscription',
+        name: 'subscription',
+        meta: { title: "Hospital Subscription" },
+        component: () => import('@/layout/hospital/HospitalSubscription.vue')
       },
-      {
-        path: 'doctoraccountadd',
-        name: 'doctoraccountadd',
-        meta: { title: "Doctor Account Add" },
-        component: () => import('@/layout/doctoraccount/DoctoraccountAdd.vue')
-      },
+      // 设备管理 device management
       {
         path: 'device',
         name: 'device',
         meta: { title: "Device Management" },
         component: () => import('@/layout/device/IndexView.vue')
-      }, {
+      },
+      // 设备添加 add deviceadd
+      {
         path: 'deviceadd',
         name: 'deviceadd',
         meta: { title: "Add Device" },
         component: () => import('@/layout/device/DeviceAdd.vue')
-      },{
-        path:'results',
-        name:'results',
-        meta:{title:'Results'},
-        component: () => import('@/layout/testresults/IndexView.vue')
-
-      }
-      ,{
-        path:'result2',
-        name:'result2',
-        meta:{title:'Results'},
-        component: () => import('@/layout/testresults/Results2View.vue')
-
-      }
-      // ,{
-      //   path:'testone',
-      //   name:'testone',
-      //   meta:{title:'Testone'},
-      //   component: () => import('@/layout/testresults/TestoneView.vue')
-
-      // }
-      ,{
-        path:'resultso',
-        name:'resultso',
-        meta:{title:'Results One'},
-        component: () => import('@/layout/testresults/ResultsView.vue')
-
-      },
+      }, 
+      // 病人管理 patient management
       {
-        path:'resultw',
-        name:'resultw',
-        meta:{title:'2021-10-5'},
-        component: () => import('@/layout/testresults/ResultsTwo.vue')
-
+        path: 'patient',
+        name: 'patient',
+        meta: { title: "Patient Management" },
+        component: () => import('@/layout/Personal/IndexView.vue')
       },
+      // 历史病例 history mdedical
       {
-        path:'resultw1',
-        name:'resultw1',
-        meta:{title:'Results Two'},
-        component: () => import('@/layout/testresults/ResultsTwo1.vue')
-
+        path: 'historymedical',
+        name: 'historymedical',
+        meta: { title: "History Medical" },
+        component: () => import('@/layout/Personal/HistoryMedical.vue')
       },
+      // 添加病人页1 patientadd
       {
-        path:'resultw2',
-        name:'resultw2',
-        meta:{title:'Results Two'},
-        component: () => import('@/layout/testresults/ResultsTwo2.vue')
-
+        path: 'patientaddv1',
+        name: 'patientaddv1',
+        meta: { title: "Add Patient" },
+        component: () => import('@/layout/Personal/PatientAdd1.vue')
       },
+      // 病人测试结果 test result 
       {
-        path:'resultw3',
-        name:'resultw3',
-        meta:{title:'Results Two'},
-        component: () => import('@/layout/testresults/ResultsTwo3.vue')
-
+        path: 'testresult',
+        name: 'testresult',
+        meta: { title: 'Results' },
+        component: () => import('@/layout/testresults/TestResult.vue')
       },
+      // 病人测试详情页 test details
       {
-        path:'resultw4',
-        name:'resultw4',
-        meta:{title:'Results Two'},
-        component: () => import('@/layout/testresults/ResultsTwo4.vue')
+        path: 'testdetails',
+        name: 'testdetails',
+        meta: { title: '2021-10-5' },
+        component: () => import('@/layout/testresults/TestDetails.vue')
       },
+      // 历史测试 history test
       {
-        path:'resultw5',
-        name:'resultw5',
-        meta:{title:'Results Two'},
-        component: () => import('@/layout/testresults/ResultsTwo5.vue')
-
-      },
-      // {
-      //   path:'resultw6',
-      //   name:'resultw6',
-      //   meta:{title:'Results Two'},
-      //   component: () => import('@/layout/testresults/ResultsTwo6.vue')
-
-      // },
-      // {
-      //   path:'resultw7',
-      //   name:'resultw7',
-      //   meta:{title:'Results Two'},
-      //   component: () => import('@/layout/testresults/ResultsTwo7.vue')
-      // },
-      {
-        path:'historytest',
-        name:'historytest',
-        meta:{title:'History Test'},
-        component: () => import('@/layout/historytest/HistoryTest.vue')
-
+        path: 'historytest',
+        name: 'historytest',
+        meta: { title: 'History Test' },
+        component: () => import('@/layout/testresults/HistoryTest.vue')
       }
     ]
   },
-  
+  // 登录 login
   {
     path: '/login',
     name: 'login',
     component: () => import(/* webpackChunkName: "about" */ '../views/LoginView.vue')
-
-  },{
+  },
+  // 页面丢失 pagemiss
+  {
     path: '/*',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    name: 'pagemiss',
+    component: () => import(/* webpackChunkName: "about" */ '../views/PageMiss.vue')
   },
 ]
 
@@ -240,20 +148,19 @@ const router = new VueRouter({
   routes
 })
 import store from "../store"
-router.beforeEach((to,from,next)=>{
- if(to.path == '/login'){
-   next()
- }else{
-   let token =localStorage.getItem('token')
-   console.log(store.getters.token,'222');
-   
-   if(token===null||token===""){
-     next('/login')
-   }else{
-     next()
-   }
- }
-  document.title="QuanBio";
+router.beforeEach((to, from, next) => {
+  if (to.path == '/login') {
+    next()
+  } else {
+    let token = localStorage.getItem('token')
+    console.log(store.getters.token, '222');
+    if (token === null || token === "") {
+      next('/login')
+    } else {
+      next()
+    }
+  }
+  document.title = "QuanBio";
   next()
 })
 export default router

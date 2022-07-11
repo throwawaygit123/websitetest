@@ -1,4 +1,5 @@
 <template>
+<!-- 全局账号管理 Global account management  -->
   <div class="hospital">
     <el-row style="float:left">
       <router-link to="/globalaccountadd" style="text-decoration: none; color: white">

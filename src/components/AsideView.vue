@@ -97,7 +97,7 @@
             </el-menu-item>
           </router-link>
           
-           <router-link to="/patientmanagement">
+           <router-link to="/patient">
             <el-menu-item index="5">
               <i class="el-icon-s-custom" style="color: #333"></i>
               <span slot="title" style="font-size: 17px">

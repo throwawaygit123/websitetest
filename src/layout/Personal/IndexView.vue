@@ -1,7 +1,8 @@
 <template>
+<!-- 病人管理  Patient management-->
   <div class="personal">
     <el-row style="float:left">
-      <router-link to="/addv1" style="text-decoration: none; color: white">
+      <router-link to="/patientaddv1" style="text-decoration: none; color: white">
         <el-button type="primary" :style="selfstyle" class="btnper1" plain style="float: left; text-align: center;">{{ $t("m.add") }} Patient</el-button>
       </router-link>
     </el-row>
@@ -23,7 +24,7 @@
         </router-link>
       </el-table-column>
       <el-table-column prop="name" :label="$t('m.testresult')" width="150">
-        <router-link to="result2">
+        <router-link to="testresult">
           <template>
             <el-tag type="success">{{ $t("m.clicktoview") }}</el-tag>
           </template>

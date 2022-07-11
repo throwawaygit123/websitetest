@@ -1,4 +1,5 @@
 <template>
+<!-- 医院订阅 Hospital subscription-->
   <div class="qus">
     <h1>QuanCardio Pricing Model</h1>
     <el-row :gutter="10">

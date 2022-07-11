@@ -1,7 +1,7 @@
 <template>
+<!--  // 历史测试  Historical test-->
   <div>
     <div class="box">
-      <!-- <button style="float:right" @click="cli">11</button> -->
       <el-button
         type="primary"
         size="small"

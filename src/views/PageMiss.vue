@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="pagemiss">
     <h1>Page missing....</h1>
   </div>
 </template>

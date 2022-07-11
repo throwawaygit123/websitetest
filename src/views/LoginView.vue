@@ -33,10 +33,10 @@
 </template>
 
 <script>
-import axios from "axios";
-import { $Message } from "../common/untils";
+// import axios from "axios";
+// import { $Message } from "../common/untils";
 
-// import {Login} from  '@/request/login'
+import {Login} from  '@/request/login'
 // import {mapMutations} from 'vuex'
 export default {
   data() {
@@ -64,45 +64,45 @@ export default {
         if (valid) {
           let _this = this;
      
-            axios.post("http://52.3.194.83:9192/api/userlogin/user", {
-              email: _this.ruleForm.email,
-              password: _this.ruleForm.pass
-            })
-    // $Message(res.state ? "success" : "error", res.msg, 3000)
-            .then(res => {
-              console.log(res.data.token,'token');
-              if(res.data.state){
-                console.log(111);
+    //         axios.post("http://52.3.194.83:9192/api/userlogin/user", {
+    //           email: _this.ruleForm.email,
+    //           password: _this.ruleForm.pass
+    //         })
+    // // $Message(res.state ? "success" : "error", res.msg, 3000)
+    //         .then(res => {
+    //           console.log(res.data.token,'token');
+    //           if(res.data.state){
+    //             console.log(111);
                 
-              // localStorage.setItem("token", JSON.stringify(res.data.token))
-              // console.log(_this.$store)
-              //  _this.$store.commit('set_list', res.data)
+    //           // localStorage.setItem("token", JSON.stringify(res.data.token))
+    //           // console.log(_this.$store)
+    //           //  _this.$store.commit('set_list', res.data)
 
-               _this.$store.commit('set_token', res.data.token)
-                this.$router.push({path:'/index'})
-                $Message("success" , 'Login successful', 3000)
-              }else{
-                // alert('Login failed')
-                $Message("error" , 'Login failed', 3000)
+    //            _this.$store.commit('set_token', res.data.token)
+    //             this.$router.push({path:'/index'})
+    //             $Message("success" , 'Login successful', 3000)
+    //           }else{
+    //             // alert('Login failed')
+    //             $Message("error" , 'Login failed', 3000)
 
-              }
-            })
-            // 1750 58
-            // 1166 38x
-            .catch(err => {
-              alert('Login failed')
-              console.log("问题" + err);
-            });
+    //           }
+    //         })
+    //         // 1750 58
+    //         // 1166 38x
+    //         .catch(err => {
+    //           alert('Login failed')
+    //           console.log("问题" + err);
+    //         });
 
 
 
           // console.log(this.ruleForm)
-          //  Login(
-          //    {
-          //     email: _this.ruleForm.email,
-          //     password: _this.ruleForm.pass
-          //   }
-          // )
+           Login(
+             {
+              email: _this.ruleForm.email,
+              password: _this.ruleForm.pass
+            }
+          )
 
         } else {
           console.log("error submit!!");

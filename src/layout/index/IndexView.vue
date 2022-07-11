@@ -1,4 +1,5 @@
 <template>
+<!-- 首页 home page-->
   <div class="one">
     <div class="one1">
       <el-row style="float:left;width:500px">

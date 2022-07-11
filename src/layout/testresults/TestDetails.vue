@@ -1,4 +1,5 @@
 <template>
+<!-- 病人测试详情  Patient test details-->
   <div class="hospital">
     <el-row style="float:left;width:500px">
       <p style="float:left;display:inline-block;width:200px;line-height:normal; font-weight:700;">2021-10-5 11:00(am)</p>
