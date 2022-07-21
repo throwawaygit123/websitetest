@@ -40,7 +40,6 @@ nav a.router-link-exact-active {
 }
 .el-input__inner:focus{
   border:1px solid #eb5350 !important;
-
 }
 .el-select-dropdown__item{
   color:#eb5350 ;

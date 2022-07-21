@@ -35,13 +35,9 @@
           <i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <el-dropdown-menu slot="dropdown" style=" width:200px">
-           <!-- <router-link to="/login" style="text-decoration: none" @click="loginout()"> -->
-           <!-- <template @click="fn3"> -->
               <el-dropdown-item icon="el-icon-user"   @click.native="fn3"
                 >{{$t('m.switchaccount')}}</el-dropdown-item
               >
-              <!-- </template> -->
-            <!-- </router-link> -->
           <router-link to="/index" style="text-decoration: none">
               <el-dropdown-item icon="el-icon-switch-button"
                 >{{$t('m.exitlogin')}}</el-dropdown-item
@@ -79,12 +75,12 @@ export default {
                 cancelButtonText: 'cancel',
                 type: 'warning'
             }).then(() => {
-                sessionStorage.removeItem("token")
+                localStorage.removeItem("token")
                 this.$router.push('/login')
             }).catch(() => {
                  $Message("error" , ' Logoff failed', 3000)
             });
-    }
+    },
   }
 };
 </script>

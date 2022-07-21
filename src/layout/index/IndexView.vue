@@ -1,22 +1,20 @@
 <template>
-<!-- 首页 home page-->
+  <!-- 首页 home page-->
   <div class="one">
     <div class="one1">
       <el-row style="float:left;width:500px">
         <p
-          style="color:#eb5350; float:left;display:inline-block;width:200px;line-height:normal;font-weight:600;font-size:20px;"
+          style="color:#eb5350; float:left;display:inline-block;width:200px;line-height:normal;font-weight:800;font-size:22px;"
         >{{$t("m.morning")}}</p>
       </el-row>
       <el-row style="float:right;margin-bottom:15px;width:250">
-        <router-link to style="text-decoration: none; color: white">
-          <el-button
-            type="primary"
-            plain
-            :style="selfstyle"
-            class="btnindex"
-            style="float:left; text-align: center;display:block; "
-          >{{ $t("m.myaccount") }}</el-button>
-        </router-link>
+        <el-button
+          type="primary"
+          plain
+          :style="selfstyle"
+          class="btnindex"
+          style="float:left; text-align: center;display:block; "
+        >{{ $t("m.myaccount") }}</el-button>
         <el-button
           type="primary"
           plain
@@ -24,12 +22,27 @@
           :style="selfstyle"
           style="float:left; text-align: center;display:block;margin-left:5px"
         >{{ $t("m.aboutus") }}</el-button>
+        <el-button
+          type="primary"
+          plain
+          class="btnindex"
+          :style="selfstyle"
+          style="float:left; text-align: center;display:block;margin-left:5px"
+        >{{ $t("m.down") }}</el-button>
       </el-row>
     </div>
 
     <div class="one2">
-      <p style="border-bottom:2px solid black;">{{$t('m.recentpatient')}}</p>
-      <ul class="one2-2">
+      <p style="font-size:20px;font-weight:600;">{{$t('m.recentpatient')}}</p>
+      <template>
+        <el-table :data="tableData" style="width: 100%">
+          <el-table-column prop="date" label="User Name"></el-table-column>
+          <el-table-column prop="name" label="Time"></el-table-column>
+          <el-table-column prop="address" label="Department"></el-table-column>
+        </el-table>
+      </template>
+      
+      <!-- <ul class="one2-2">
         <li>Wilson</li>
         <li style="margin-left:250px;margin-right :300px;">11:28</li>
         <li>Internal Medicine-Cardiovascular Department</li>
@@ -98,8 +111,7 @@
         <li>Glen</li>
         <li style="margin-left:273px;margin-right :300px;">9:15</li>
         <li>Children's Department</li>
-      </ul>
-     
+      </ul>-->
     </div>
   </div>
 </template>
@@ -109,12 +121,59 @@ export default {
   data() {
     return {
       selfstyle: {
-					color: "white",
-          width:'120px',
-          height:'40px',
-          backgroundColor: "#eb5350",
-          border:'none'
-				}
+        color: "white",
+        width: "120px",
+        height: "40px",
+        backgroundColor: "#eb5350",
+        border: "none"
+      },
+      tableData: [
+        {
+          date: "Wilson",
+          name: "11:28 am",
+          address: "Internal Medicine-Cardiovascular Department"
+        },
+        {
+          date: "Alan",
+          name: "11:56 am",
+          address: "Department of Stomatology"
+        },
+        {
+          date: "Jack",
+          name: "11:32",
+          address: "Department of Neurology"
+        },
+        {
+          date: "Leilani",
+          name: "10:48",
+          address: "Internal Medicine-Cardiovascular Department"
+        },
+        {
+          date: "Aidan",
+          name: "10:45 am",
+          address: "Department of Stomatology"
+        },
+        {
+          date: "Jerome",
+          name: "10:23 am",
+          address: "Internal Medicine-Cardiovascular Department"
+        },
+        {
+          date: "Fiona",
+          name: "10:05",
+          address: "Children's Department"
+        },
+        {
+          date: "Harriet",
+          name: "9:36",
+          address: "Department of Stomatology"
+        },
+        {
+          date: "Wilson",
+          name: "11:28 am",
+          address: "Internal Medicine-Cardiovascular Department"
+        }
+      ]
     };
   },
   created() {},
@@ -124,7 +183,7 @@ export default {
 </script>
 
 <style  scoped>
-.one{
+.one {
   background-color: white;
   padding: 5px 5px;
 }
@@ -136,7 +195,7 @@ export default {
   width: 100%;
   height: 500px;
 }
-.one2-2{
+.one2-2 {
   height: 30px;
   border-bottom: 1px solid #999;
 }
@@ -145,40 +204,30 @@ export default {
   line-height: 30px;
   float: left;
 }
-.one2-2:hover{
+.one2-2:hover {
   background-color: #f5a9a8;
 }
-p{
+p {
   margin: 0 0;
 }
-ul{
+ul {
   margin: 0 0;
 }
-.el-button--primary.is-plain{
-  color:#eb5350;
+.el-button--primary.is-plain {
+  color: #eb5350;
 }
-/* .el-button--primary{
-  color:blue;
-} */
-/* .el-button–primary{
-color: #fff !important;
-background-color: #8B83D2 !important;
-border-color: #8B83D2 !important;
-}
-.el-button–primary:hover{
-background-color: #0ABBF9 !important;
-border-color: #0ABBF9 !important;
-}
-.el-button–primary:focus{
-background-color: #0ABBF9 !important;
-border-color: #0ABBF9 !important;
-} */
-.btnindex:hover{
+
+.btnindex:hover {
   color: white !important;
-  /* border:none !important; */
-  /* border:1px solid #999 !important; */
-  border:1px solid #f5a9a8 !important;
+  border: 1px solid #f5a9a8 !important;
 
   background-color: #f5a9a8 !important;
 }
+
+thead {
+  height: 0px !important;
+}
+/* .el-table .cell{
+ text-align: left !important;
+} */
 </style>
