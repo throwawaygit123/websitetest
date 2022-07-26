@@ -4,7 +4,7 @@
     <div class="one1">
       <el-row style="float:left;width:500px">
         <p
-          style="color:#eb5350; float:left;display:inline-block;width:200px;line-height:normal;font-weight:800;font-size:22px;"
+          style="color:#eb5350; float:left;display:inline-block;width:200px;line-height:normal;font-weight:750;font-size:22px;"
         >{{$t("m.morning")}}</p>
       </el-row>
       <el-row style="float:right;margin-bottom:15px;width:250">
