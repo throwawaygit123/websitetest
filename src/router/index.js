@@ -160,7 +160,7 @@ router.beforeEach((to, from, next) => {
       next()
     }
   }
-  document.title = "QuanBio";
+  document.title = "QuanCardio";
   next()
 })
 export default router

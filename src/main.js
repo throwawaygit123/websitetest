@@ -17,6 +17,7 @@ const i18n = new VueI18n({
   },
   silentTranslationWarn: true
 })
+
 // router.beforeEach((to,from,next)=>{
 //   if(to.meta.requireAuth){
 //     if(localStorage.email){
@@ -31,7 +32,6 @@ const i18n = new VueI18n({
 // })
 Vue.prototype.$axios = axios
 // const $axios = axios.create({
-
 //   timeout: 5000
 // });
 

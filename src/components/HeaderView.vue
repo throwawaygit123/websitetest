@@ -2,7 +2,7 @@
   <div style="width:100%;height:100%;">
     <div style="width:230px;height:50px;float:left;">
        <img src="../assets/logo_03.png" alt style="max-width:44px;float:left;margin-left:0px;margin-top:7px" />
-       <p style="float:left;color:#333; margin:5px 0 0 3px;font-size:30px">QuanBio</p>
+       <p style="float:left;color:#333; margin:0px 0 0 3px;font-size:30px">QuanCardio</p>
     </div>
    
     <el-button
