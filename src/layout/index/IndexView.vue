@@ -36,7 +36,7 @@
       <p style="font-size:20px;font-weight:600;">{{$t('m.recentpatient')}}</p>
       <template>
         <el-table :data="tableData" style="width: 100%">
-          <el-table-column prop="date" label="User Name"></el-table-column>
+          <el-table-column prop="date" label="User Name"  ></el-table-column>
           <el-table-column prop="name" label="Time"></el-table-column>
           <el-table-column prop="address" label="Department"></el-table-column>
         </el-table>
@@ -140,12 +140,12 @@ export default {
         },
         {
           date: "Jack",
-          name: "11:32",
+          name: "11:32 am",
           address: "Department of Neurology"
         },
         {
           date: "Leilani",
-          name: "10:48",
+          name: "10:48 am",
           address: "Internal Medicine-Cardiovascular Department"
         },
         {
@@ -160,12 +160,12 @@ export default {
         },
         {
           date: "Fiona",
-          name: "10:05",
+          name: "10:05 am",
           address: "Children's Department"
         },
         {
           date: "Harriet",
-          name: "9:36",
+          name: "9:36 am",
           address: "Department of Stomatology"
         },
         {
@@ -227,7 +227,9 @@ ul {
 thead {
   height: 0px !important;
 }
-/* .el-table .cell{
- text-align: left !important;
-} */
+.one2>>>.el-table .cell{
+  text-align: left !important;
+}
+
+
 </style>
