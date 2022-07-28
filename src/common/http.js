@@ -5,11 +5,11 @@ import ax from "axios"
 
 let baseURL = '';
 if (process.env.NODE_ENV == "development") {    //开发环境
-    baseURL = "http://52.3.194.83:9192/api/"
+    baseURL = "https://java.quancardio.com/api/"
 } else {  //生产环境
     baseURL = "http:xxx.com/api"
 }
-
+console.log(process.env.NODE_ENV)
 
 // console.log(process);
 // let baseURL="";
