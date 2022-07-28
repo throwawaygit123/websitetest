@@ -44,7 +44,7 @@ import { Login } from "@/request/login";
 // console.log('WebSocket' in window)
 
 // if ('WebSocket' in window) {
-//        var  websocket = new WebSocket("wss://www.quancardio.com/wss/");
+//        var  websocket = new WebSocket("wss://127.0.0.0:8080/wss");
 
 //         websocket.onopen = function () {
 //             console.log("open成功");
@@ -60,7 +60,7 @@ import { Login } from "@/request/login";
 //             console.log("关闭连接");
 //         };
 //         websocket.onerror = function () {
-//             console.log("连接错误");
+//             console.log("连接错误",err);
 //          };
 
 //     } else {
