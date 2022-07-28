@@ -5,7 +5,7 @@ module.exports = defineConfig({
   devServer: {
         allowedHosts: 'all',
         client: {
-            webSocketURL: 'auto://127.0.0.0:8080/wss'
+            webSocketURL: 'wss://www.quancardio.com/wss'
         }
       },
 })
