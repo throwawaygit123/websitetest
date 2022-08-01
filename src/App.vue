@@ -5,6 +5,39 @@
   </div>
 </template>
 
+<script>
+// import websocket from '@/js/websocket'
+export default{
+  name:'App',
+created(){
+  // websocket.Init('user1')
+}
+}
+
+  // el:'#app',
+  // created:function () {
+  //   this.initConn()
+  // },
+  // data:{
+  //   server:"wss://javascript.info/article/websocket/demo/hello",
+  //   socket:null
+  // },
+  // methods:{
+  //   initConn(){
+  //     let socket = new WebSocket(this.server)
+  //     this.socket=socket
+  //     this.socket.onmessage=this.OnMessage;
+  //     this.socket.onOpen=this.OnOpen
+  //   },
+  //   OnOpen(){
+  //     console.log('建立成功')
+  //   },
+  //   OnMessage(e){
+  //     console.log(e)
+  //   }
+  // },
+</script>
+
 <style>
 body{
   background-color: #e9eef3;
