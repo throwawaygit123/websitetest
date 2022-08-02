@@ -19,52 +19,15 @@ const i18n = new VueI18n({
   silentTranslationWarn: true
 })
 
-777777777777777777777777777
-// router.beforeEach((to,from,next)=>{
-//   if(to.meta.requireAuth){
-//     if(localStorage.email){
-//       next()
-//     }else{
-//       next({
-//         path:'/',
-//         // query:{redirect:to.fullPath}
-//       })
-//     }
-//   }
-// })
+
 
 Vue.prototype.$axios = axios
-
-// const $axios = axios.create({
-//   timeout: 5000
-// });
 
 
 Vue.config.productionTip = false
 
 new Vue({
-//   el:'#app',
-//   created:function () {
-//     this.initConn()
-//   },
-//   data:{
-//     server:"wss://javascript.info/article/websocket/demo/hello",
-//     socket:null
-//   },
-//   methods:{
-//     initConn(){
-//       let socket = new WebSocket(this.server)
-//       this.socket=socket
-//       this.socket.onmessage=this.OnMessage;
-//       this.socket.onOpen=this.OnOpen
-//     },
-//     OnOpen(){
-//       console.log('建立成功')
-//     },
-//     OnMessage(e){
-//       console.log(e)
-//     }
-//   },
+
   router,
   store,
   i18n,

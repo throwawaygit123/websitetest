@@ -48,6 +48,7 @@
 export default {
   data() {
     return {
+      search:'',
        selfstyle: {
 					color: "white",
           width:'94px',

@@ -38,11 +38,11 @@
               <el-dropdown-item icon="el-icon-user"   @click.native="fn3"
                 >{{$t('m.switchaccount')}}</el-dropdown-item
               >
-          <router-link to="/index" style="text-decoration: none">
-              <el-dropdown-item icon="el-icon-switch-button"
+          
+              <el-dropdown-item icon="el-icon-switch-button" @click.native="fn3"
                 >{{$t('m.exitlogin')}}</el-dropdown-item
               >
-            </router-link>
+            
         </el-dropdown-menu>
       </el-dropdown>
     </div>

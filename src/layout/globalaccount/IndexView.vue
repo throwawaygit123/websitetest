@@ -13,6 +13,17 @@
           size="mini"
           style="width:20%;float:right"
           :placeholder="$t('m.ekts')"/>
+    <!-- <template>
+  <el-select v-model="value" filterable placeholder="请选择">
+    <el-option
+      v-for="item in options"
+      :key="item.value"
+      :label="item.label"
+      :value="item.value">
+    </el-option>
+  </el-select>
+</template> -->
+
     <el-table :data="tableData" border style="width: 100%">
       <el-table-column prop="date" :label="$t('m.accountid')" width="100">
 
@@ -69,6 +80,7 @@
 export default {
   data() {
     return {
+      search:'',
       selfstyle: {
 					color: "white",
           width:'120px',

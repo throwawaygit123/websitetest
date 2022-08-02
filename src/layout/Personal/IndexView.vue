@@ -35,14 +35,10 @@
         <template>
           <!-- <el-tag type="warning">点击上传</el-tag> -->
           <el-upload
+          action="http://localhost:8080"
             class="upload-demo"
-            :on-preview="handlePreview"
-            :on-remove="handleRemove"
-            :before-remove="beforeRemove"
             multiple
             :limit="3"
-            :on-exceed="handleExceed"
-            :file-list="fileList"
             :show-file-list="true"
           >
             <el-tag  type="primary">{{ $t("m.clickupload") }}</el-tag>
@@ -87,6 +83,7 @@
 export default {
   data() {
     return {
+      search:'',
       selfstyle: {
 					color: "white",
           width:'120px',

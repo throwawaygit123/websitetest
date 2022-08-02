@@ -74,7 +74,6 @@
               </el-menu-item>
             </router-link>
           </el-submenu> -->
-
           <router-link to="hospital">
             <el-menu-item index="3">
               <i class="el-icon-office-building" style="color: #333"></i>

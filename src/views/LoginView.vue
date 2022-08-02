@@ -37,35 +37,6 @@
 
 import { Login } from "@/request/login";
 // import {mapMutations} from 'vuex'
-// console.log(WebSocket)
-// console.log('WebSocket')
-// console.log(window)
-
-// console.log('WebSocket' in window)
-
-// if ('WebSocket' in window) {
-//        var  websocket = new WebSocket("wss://javascript.info/article/websocket/demo/hello");
-
-//         websocket.onopen = function () {
-//             console.log("open成功");
-//             // websocket.send("hello");
-//         };
-
-//         //客户端收到服务器的方法，这个方法就会被回调
-//         websocket.onmessage = function (ev) {
-//             console.log("接收到消息:"+ev.data);
-//         };
-
-//         // websocket.onclose = function () {
-//         //     console.log("关闭连接");
-//         // };
-//         websocket.onerror = function () {
-//             console.log("连接错误");
-//          };
-
-//     } else {
-//         alert('当前浏览器 Not support websocket')
-//     }
 
 
 

@@ -110,7 +110,6 @@ export const m = {
     globaladminaccount: '全局管理员账号',
     hospitaladminaccount: '医院管理账号',
     doctoraccount: '医生管理账号',
-    //    hospiatalmanagement:'医院管理'
     devicemanagement: '设备管理',
     testresult:'测试结果',
     dpht:'显示患者病历对比',
@@ -123,7 +122,6 @@ export const m = {
     portnumber:'端口号',
     switchaccount:'切换账号',
     exitlogin:'退出登录',
-    // 上传附件文件:'Upload attachment file',
     uaf:'上传附件文件',
     clickupload:'点击上传',
     date:'测试日期',
@@ -140,8 +138,6 @@ export const m = {
     dateofbirth1:'请输入您的出生日期',
     hospitaladdress:'医院地址',
     petha:'请输入医院地址',
-    // homepage:'首页'
-    // meta:{role:'角色管理'}
     viewdetails:'查看详情',
     down:'下载',
     downall:'下载全部',
