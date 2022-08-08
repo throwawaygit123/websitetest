@@ -4,8 +4,6 @@
     <router-view/>
   </div>
 </template>
-
-
 <style>
 body{
   background-color: #e9eef3;
@@ -50,4 +48,26 @@ nav a.router-link-exact-active {
     display:none !important; 
 
 }
+.btnglo2:hover{
+  color: white !important;
+  border:1px solid #f5a9a8 !important;
+
+  background-color: #f5a9a8 !important;
+}
+
+.btnhos1:hover{
+   color: white !important;
+
+  border:1px solid #f5a9a8 !important;
+
+  background-color: #f5a9a8 !important;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+
+  background-color: #eb5350 !important;
+}
+.el-pager li:hover{
+  color:#f5a9a8 !important;
+}
+
 </style>

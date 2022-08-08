@@ -33,7 +33,8 @@
             size="mini"
             type="success"
             @click="handleEdit(scope.$index, scope.row)"
-          >{{ $t("m.examine") }}</el-button>
+          >{{ $t("m.examine") }}</el-button
+          >
           <el-button
             size="mini"
             type="danger"
@@ -51,7 +52,6 @@
     ></el-pagination>
   </div>
 </template>
-
 <script>
 export default {
   data() {
@@ -83,17 +83,17 @@ export default {
         {
           date: "4",
           num: "000000014",
-          admin: "Blood glucose machine"
+          admin: "Blood gluc ,ose machine"
         },
         {
           date: "5",
           num: "000000015",
-          admin: "Percutaneous detector"
+          admin: "Percutaneous detector",
         }
       ]
     };
   }
-};
+};   
 </script>
 
 <style scoped>

@@ -1,7 +1,7 @@
 import ax from "axios"
 // import {$Message} from "./untils"
  import store from "@/store"
-// import router from "../router";
+import router from "../router";
 
 let baseURL = '';
 if (process.env.NODE_ENV == "development") {    //开发环境
@@ -9,7 +9,7 @@ if (process.env.NODE_ENV == "development") {    //开发环境
 } else {  //生产环境
     baseURL = "http:xxx.com/api"
 }
-console.log(process.env.NODE_ENV)
+// console.log(process.env.NODE_ENV)
 
 // console.log(process);
 // let baseURL="";
@@ -35,14 +35,14 @@ axios.interceptors.request.use(function (config) {
 axios.interceptors.response.use(function (response) {
     // 对响应数据做点什么
     // return response;
-    console.log(response);
+    // console.log(response);
     // if (response.status!=200) {
     //     $Message("error","请求失败"+response.data.msg)
     // }
     // console.log(response);
-    // if(response.data.code==403){
-    //     router.push("/login")
-    // }
+    if(response.data.code !== 200){
+        router.push("/login")
+    }
     return response.data;
 }, function (error) {
     // 对响应错误做点什么

@@ -18,12 +18,9 @@
          
           <el-option :label="$t('m.nurse')" value="nurse"></el-option>
            <el-option :label="$t('m.patient')" value="patient"></el-option>
-          <!-- <el-option label="" value="beijing"></el-option> -->
+
         </el-select>
       </el-form-item>
-      <!-- <el-form-item :label="$t('m.username')" prop="name">
-        <el-input v-model="ruleForm.name"></el-input>
-      </el-form-item> -->
       <el-form-item :label="$t('m.menupermissions')" prop="name">
         <el-tree
           :data="data"
@@ -85,20 +82,6 @@ export default {
         {
           id: 2,
           label: 'Account Management',
-          // children: [
-          //   {
-          //     id: 5,
-          //     label: 'Global Administrator Account'
-          //   },
-          //   {
-          //     id: 6,
-          //     label:'Hospital Admin Account'
-          //   },
-          //   {
-          //     id: 7,
-          //     label: 'Doctor Account',
-          //   }
-          // ]
         },
         {
           id: 3,
@@ -109,22 +92,8 @@ export default {
           label: 'Device Management',
         },
         {
-          id: 4,
+          id: 5,
           label: 'Patient Management',
-          // children: [
-          //   {
-          //     id: 8,
-          //     label: 'Personal Information'
-          //   },
-          //   {
-          //     id: 9,
-          //     label: 'Test Result'
-          //   },
-          //   {
-          //     id: 10,
-          //     label: 'Patient History Testing'
-          //   }
-          // ]
         }
       ],
       defaultProps: {
@@ -142,8 +111,6 @@ export default {
 }
 .btnrole2:hover{
    color: white !important;
-  /* border:none !important; */
-  /* border:1px solid #999 !important; */
   border:1px solid #f5a9a8 !important;
 
   background-color: #f5a9a8 !important;

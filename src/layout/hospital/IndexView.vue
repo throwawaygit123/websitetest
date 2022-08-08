@@ -122,8 +122,7 @@ export default {
 }
 .btnhos1:hover{
    color: white !important;
-  /* border:none !important; */
-  /* border:1px solid #999 !important; */
+
   border:1px solid #f5a9a8 !important;
 
   background-color: #f5a9a8 !important;

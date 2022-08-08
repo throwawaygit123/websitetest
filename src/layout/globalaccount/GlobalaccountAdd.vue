@@ -45,9 +45,6 @@
               <!-- <el-date-picker v-model="form.dataBirth" type="date" ></el-date-picker> -->
               <el-input v-model="ruleForm.dataBirth" :placeholder="$t('m.dateofbirth1')"></el-input>
             </el-form-item>
-          <!-- <el-form-item :label="$t('m.username')">
-            <el-input v-model.number="ruleForm.age"></el-input>
-          </el-form-item> -->
           <el-form-item :label="$t('m.password')" prop="pass">
             <el-input type="password" v-model="ruleForm.pass" autocomplete="off"></el-input>
           </el-form-item>
@@ -78,22 +75,23 @@
 export default {
   data() {
     
-    var checkAge = (rule, value, callback) => {
-      if (!value) {
-        return callback(new Error("Name cannot be empty"));
-      }
-      setTimeout(() => {
-        if (!Number.isInteger(value)) {
-          callback(new Error("请输入数字值"));
-        } else {
-          if (value < 18) {
-            callback(new Error("必须年满18岁"));
-          } else {
-            callback();
-          }
-        }
-      }, 1000);
-    };
+    // var checkAge = (rule, value, callback) => {
+    //   if (!value) {
+    //     return callback(new Error("Name cannot be empty"));
+    //   }
+    //   setTimeout(() => {
+    //     if (!Number.isInteger(value)) {
+    //       callback(new Error("请输入数字值"));
+    //     } else {
+    //       if (value < 18) {
+    //         callback(new Error("必须年满18岁"));
+    //       } else {
+    //         callback();
+    //       }
+    //     }
+    //   }, 1000);
+    // };
+
     var validatePass = (rule, value, callback) => {
       if (value === "") {
         callback(new Error("Please input a password"));
@@ -132,7 +130,7 @@ export default {
       rules: {
         pass: [{ validator: validatePass, trigger: "blur" }],
         checkPass: [{ validator: validatePass2, trigger: "blur" }],
-        age: [{ validator: checkAge, trigger: "blur" }]
+        // age: [{ validator: checkAge, trigger: "blur" }]
       }
     };
   },
@@ -140,7 +138,6 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate(valid => {
         if (valid) {
-          // alert("submit!");
           this.$router.go(-1);
         } else {
           console.log("error submit!!");
@@ -157,11 +154,8 @@ export default {
 
 <style  scoped>
 .btnglo2:hover{
-   color: white !important;
-  /* border:none !important; */
-  /* border:1px solid #999 !important; */
+  color: white !important;
   border:1px solid #f5a9a8 !important;
-
   background-color: #f5a9a8 !important;
 }
 </style>
