@@ -90,49 +90,8 @@
                 </div>
               </div>
               </div>
-              
-              
             </div>
-
-            <!-- <div > -->
-            <!-- <div class="p1-2" v-show="state == 0">
-                <p
-                  style="
-                    font-size: 14px;
-                    margin-bottom: 15px;
-                    border-bottom: 1px solid #999;
-                    line-height: 16px;
-                  "
-                >{{ $t("m.pd") }}</p>
-                <button @click="two(this.state==1)">{{ $t("m.utis") }}</button>
-                <div class="p1-3">
-                  <div class="p1-4">
-                    <span style="font-size: 14px">{{ $t("m.kg") }}</span>
-                    <input
-                      type="text"
-                      v-model="form.kg"
-                      style="width: 50px; height: 20px; margin-left: 5px"
-                    />
-                  </div>
-                  <div class="p1-5">
-                    <span style="font-size: 14px">{{ $t("m.meter") }}</span>
-                    <input
-                      type="text"
-                      v-model="form.meters"
-                      style="width: 50px; height: 20px; margin-left: 5px"
-                    />
-                  </div>
-                </div>
-            </div>-->
-            <!-- </div> -->
-
-            <!-- </el-form-item> -->
-
-            <!-- <el-form-item>
-                <el-button type="primary" @click="onSubmit">立即创建</el-button>
-                <el-button>取消</el-button>
-            </el-form-item>-->
-
+            
             <el-form-item style="margin-top:20px;">
               <el-button type="primary" :style="selfstyle" @click="submitForm('form')">{{ $t("m.determination") }}</el-button>
               <el-button @click="resetForm('form')">reset</el-button>
@@ -142,13 +101,6 @@
       </el-col>
     </el-row>
 
-    <!-- <div class="go">
-      <router-link to="/addv2" style="color: black; text-decoration: none"
-        ><el-button type="primary" style="width: 100%"
-          >Continue(下一步)</el-button
-        ></router-link
-      >
-    </div>-->
   </div>
 </template>
 
@@ -195,7 +147,6 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate(valid => {
         if (valid) {
-          // alert("submit!");
           this.$router.go(-1);
         } else {
           console.log("error submit!!");
@@ -211,16 +162,13 @@ export default {
 </script>
 
 <style scoped>
-/* .patient {
-  border: 1px solid #999;
-  padding: 5px 5px;
-} */
+
 .p1-1 {
   /* border: 1px solid #999; */
   padding: 15px 5px;
-
   margin-top: 20px;
 }
+
 .p1-2 {
   width: 350px;
   height: 150px;
@@ -297,7 +245,6 @@ export default {
 }
 .el-radio__input.is-checked .el-radio__inner :hover{
     border-color: black;
-
 }*/
 .el-radio__input.is-checked + .el-radio__label {
   color: black;
@@ -316,7 +263,6 @@ export default {
 }
 .go {
   position: absolute;
-
   /* border: 1px solid #999; */
   text-align: center;
   line-height: 40px;

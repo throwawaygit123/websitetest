@@ -31,9 +31,9 @@
         </router-link>
       </el-table-column>
       <el-table-column prop="name" :label="$t('m.uaf')" width="230">
-        <!-- <router-link to="/historymedical"> -->
+       
         <template>
-          <!-- <el-tag type="warning">点击上传</el-tag> -->
+
           <el-upload
           action="http://localhost:8080"
             class="upload-demo"
@@ -164,24 +164,17 @@ export default {
   width: 100% !important;
 }
 .btnper1:hover{
-color: white !important;
-  /* border:none !important; */
-  /* border:1px solid #999 !important; */
+  color: white !important;
   border:1px solid #f5a9a8 !important;
-
   background-color: #f5a9a8 !important;
 }
 .el-pagination.is-background .el-pager li:not(.disabled).active{
 
   background-color: #eb5350 !important;
+  
 }
 .el-pager li:hover{
   color:#f5a9a8 !important;
 }
-/* .el-main{
-    line-height: 0px;
-}
-.el-pagination.is-background .el-pager li:not(.disabled).active{
-  background-color: #14a17e;
-} */
+
 </style>

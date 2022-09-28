@@ -22,6 +22,15 @@
           :style="selfstyle"
           style="float:left; text-align: center;display:block;margin-left:5px"
         >{{ $t("m.aboutus") }}</el-button>
+        <!-- <el-button
+          type="primary"
+          plain
+          :style="selfstyle"
+          class="btnindex"
+          style="float；left;text-align:center;display:block;margin-left:5px"
+        >
+          {{$t("m.aboutus")}}
+        </el-button> -->
         <el-button
           type="primary"
           plain
@@ -220,7 +229,6 @@ ul {
 .btnindex:hover {
   color: white !important;
   border: 1px solid #f5a9a8 !important;
-
   background-color: #f5a9a8 !important;
 }
 

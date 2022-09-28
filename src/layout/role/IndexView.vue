@@ -14,11 +14,7 @@
     />
     <el-table :data="tableData" border style="width: 100%" >
       <el-table-column prop="num" :label="$t('m.userid')" width="150"></el-table-column>
-      <!-- <el-table-column prop="username" :label="$t('m.username')" width="250"></el-table-column> -->
       <el-table-column prop="rolename" :label="$t('m.rolename')" width="250"></el-table-column>
-
-     
-
      <el-table-column prop="address" :label="$t('m.operation')">
         <template slot-scope="scope">
           <el-button size="mini" @click="handleEdit(scope.$index, scope.row)">
@@ -111,38 +107,11 @@ export default {
 <style scoped>
 .role {
   width: 100%;
-  /* background-color: white; */
-  /* padding: 5px 5px ; */
 }
 .btnrole1:hover{
  color: white !important;
-  /* border:none !important; */
-  /* border:1px solid #999 !important; */
   border:1px solid #f5a9a8 !important;
-
   background-color: #f5a9a8 !important;
 }
-/* .el-table .el-table__cell{
-  text-align: center !important;
-} */
-/* .el-table .cell{
-  text-align: center !important;
-
-} */
-/* .el-main {
-  line-height: 10px;
-}
-.el-tag {
-  background-color: #14a17e;
-  color: white;
-}
-.el-button--success.is-plain {
-  background-color: #14a17e;
-
-  color: white;
-}
-.el-button--success {
-  background-color: #14a17e;
-} */
 
 </style>

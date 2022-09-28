@@ -39,7 +39,7 @@ axios.interceptors.response.use(function (response) {
     // if (response.status!=200) {
     //     $Message("error","请求失败"+response.data.msg)
     // }
-    // console.log(response);
+    console.log(response);
     if(response.data.code !== 200){
         router.push("/login")
     }

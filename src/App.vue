@@ -22,7 +22,6 @@ body{
 nav {
   padding: 30px;
 }
-
 nav a {
   font-weight: bold;
   color: #2c3e50;
@@ -44,26 +43,20 @@ nav a.router-link-exact-active {
   color:#eb5350 ;
 }
 ::-webkit-scrollbar{
-
-    display:none !important; 
-
+  display:none !important; 
 }
 .btnglo2:hover{
   color: white !important;
   border:1px solid #f5a9a8 !important;
-
   background-color: #f5a9a8 !important;
 }
 
 .btnhos1:hover{
-   color: white !important;
-
+  color: white !important;
   border:1px solid #f5a9a8 !important;
-
   background-color: #f5a9a8 !important;
 }
 .el-pagination.is-background .el-pager li:not(.disabled).active{
-
   background-color: #eb5350 !important;
 }
 .el-pager li:hover{
