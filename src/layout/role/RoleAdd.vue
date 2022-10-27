@@ -34,14 +34,14 @@
 
       <el-form-item>
         <router-link to="./role">
-          <el-button type="primary" @click="submitForm('ruleForm')" class="btnrole2" :style="selfstyle">
+          <el-button type="primary" class="btnrole2" :style="selfstyle">
             {{
             $t("m.determination")
             }}
           </el-button>
         </router-link>
 
-        <el-button @click="resetForm('ruleForm')" style="margin-left:15px">{{ $t("m.reset") }}</el-button>
+        <el-button  style="margin-left:15px">{{ $t("m.reset") }}</el-button>
       </el-form-item>
     </el-form>
   </div>

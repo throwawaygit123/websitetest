@@ -221,15 +221,15 @@ export default {
   methods: {
     fn1() {
       this.state = !this.state;
-      console.log(this.state);
+      // console.log(this.state);
     },
     fn2() {
       this.state1 = !this.state1;
-      console.log(this.state);
+      // console.log(this.state);
     },
     fn3() {
       this.state2 = !this.state2;
-      console.log(this.state);
+      // console.log(this.state);
     },
     fn4() {
       this.state3 = true;

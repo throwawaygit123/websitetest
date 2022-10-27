@@ -18,7 +18,7 @@
             <span slot="title" style="font-size: 17px">{{ $t("m.rolemanagement") }}</span>
           </el-menu-item>
           <!-- </router-link> -->
-          
+
           <!-- <router-link to="globalaccount"> -->
           <el-menu-item index="globalaccount">
             <i class="el-icon-s-home" style="color: #333"></i>

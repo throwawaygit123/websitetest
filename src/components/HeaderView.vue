@@ -60,12 +60,12 @@ export default {
   },
   methods: {
     fn1() {
-      console.log(111);
+      // console.log(111);
       this.$i18n.locale = "en-US";
       this.st = 2;
     },
     fn2() {
-      console.log(222);
+      // console.log(222);
       this.$i18n.locale = "zh-CN";
       this.st = 1;
     },

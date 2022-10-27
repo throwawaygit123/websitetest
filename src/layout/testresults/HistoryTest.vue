@@ -720,7 +720,7 @@
                   <p>Mean arterial pressure(MAP)is an indication of global perfusion pressure necessary for organ...</p>
                 </div>
               </template>
-              <div class="foot-1" id="a9"></div>
+              <div class="foot-1" id="a9" v-show="this.yyds9"></div>
               <div class="foot-1" id="a-9" v-show="!this.yyds9"></div>
                <template>
                 <el-button
@@ -877,50 +877,50 @@ export default {
       this.yyds9=true
       // this.yyds10=true
     
-      console.log(this.dd);
+      // console.log(this.dd);
     },
     clic1() {
       this.clc1 = !this.clc1;
-      console.log(this.clc1);
+      // console.log(this.clc1);
     },
     clic2() {
       this.clc2 = !this.clc2;
-      console.log(this.clc1);
+      // console.log(this.clc1);
     },
     clic3() {
-      console.log(11111111);
+      // console.log(11111111);
       this.clc3 = !this.clc3;
-      console.log(this.clc3);
+      // console.log(this.clc3);
     },
     clic4() {
-      console.log(11111111);
+      // console.log(11111111);
       this.clc4 = !this.clc4;
-      console.log(this.clc3);
+      // console.log(this.clc3);
     },
     clic5() {
-      console.log(11111111);
+      // console.log(11111111);
       this.clc5 = !this.clc5;
-      console.log(this.clc5);
+      // console.log(this.clc5);
     },
     clic6() {
-      console.log(11111111);
+      // console.log(11111111);
       this.clc6 = !this.clc6;
-      console.log(this.clc6);
+      // console.log(this.clc6);
     },
     clic7() {
-      console.log(11111111);
+      // console.log(11111111);
       this.clc7 = !this.clc7;
-      console.log(this.clc7);
+      // console.log(this.clc7);
     },
     clic8() {
-      console.log(11111111);
+      // console.log(11111111);
       this.clc8 = !this.clc8;
-      console.log(this.clc8);
+      // console.log(this.clc8);
     },
     clic9() {
-      console.log(11111111);
+      // console.log(11111111);
       this.clc9 = !this.clc9;
-      console.log(this.clc9);
+      // console.log(this.clc9);
     },
     b1() {
       this.yyds = !this.yyds;
