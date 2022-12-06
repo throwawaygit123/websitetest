@@ -3,12 +3,12 @@ import ax from "axios"
  import store from "@/store"
 import router from "../router";
 
-let baseURL = '';
-if (process.env.NODE_ENV == "development") {    //开发环境
-    baseURL = "http://ec2-54-219-112-98.us-west-1.compute.amazonaws.com:9191/"
-} else {  //生产环境
-    baseURL = "http:xxx.com/api"
-}
+let baseURL = 'http://ec2-54-219-112-98.us-west-1.compute.amazonaws.com:9191/';
+//if (process.env.NODE_ENV == "development") {    //开发环境
+//    baseURL = "http://ec2-54-219-112-98.us-west-1.compute.amazonaws.com:9191/"
+//} else {  //生产环境
+//    baseURL = "http:xxx.com/api"
+//}
 // console.log(process.env.NODE_ENV)
 
 // console.log(process);
