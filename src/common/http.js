@@ -3,7 +3,7 @@ import ax from "axios"
  import store from "@/store"
 import router from "../router";
 
-let baseURL = 'https://testapp-env.eba-chc6j6np.us-west-1.elasticbeanstalk.com/api/';
+let baseURL = 'https://api.quancardiotest.eu/api/';
 //if (process.env.NODE_ENV == "development") {    //开发环境
 //    baseURL = "http://ec2-54-219-112-98.us-west-1.compute.amazonaws.com:9191/"
 //} else {  //生产环境
