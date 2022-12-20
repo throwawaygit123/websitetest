@@ -7,8 +7,8 @@ import store from "../store"
 
 export const Login = async (data) => {
     let res = await $axios.post('/userlogin/user', data)
-    // console.log(data)
-    // console.log(res)
+    console.log(data)
+    console.log(res)
     $Message(res.state ? "success" : "error", res.msg, 3000)
     if (res.state ) {
         // console.log(state)
