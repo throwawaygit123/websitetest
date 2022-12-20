@@ -12,7 +12,7 @@ export const $Message = (type, message, callback = () => { }) => {
     Message({
         type,
         message,
-        duration: 500,
+        duration: 3000,
         onClose: callback
     })
 }
