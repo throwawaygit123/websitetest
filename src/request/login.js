@@ -9,7 +9,7 @@ export const Login = async (data) => {
     let res = await $axios.post('/userlogin/user', data)
     console.log(data)
     console.log(res)
-    $Message(res.state ? "success" : "error", res.msg, 3000)
+    $Message(res.state ? "success" : "error: Login failed", res.msg, 3000)
     if (res.state ) {
         // console.log(state)
         // console.log(rst)
